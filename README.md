@@ -1,4 +1,6 @@
-# trophy case
+# 🏆 Trophy Case 🏆
+
+These bugs aren't nearly as serious as the [memory-safety issues afl has discovered](http://lcamtuf.coredump.cx/afl/#bugs) in C and C++ projects. That's because Rust is memory-safe by default, but also because not many people have tried fuzzing yet! Over time we will update this section with the most interesting bugs, whether they're logic errors or memory-safety problems arising from `unsafe` code. Pull requests are welcome!
 
 Crate | Information | Fuzzer
 ----- | ----------- | ------
