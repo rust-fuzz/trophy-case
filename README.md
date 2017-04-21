@@ -4,6 +4,7 @@ These bugs aren't nearly as serious as the [memory-safety issues afl has discove
 
 Crate | Information | Fuzzer
 ----- | ----------- | ------
+bmfont | [panic on unwrapping](https://github.com/netgusto/rust-bmfont/issues/2) | libfuzzer
 brotli-rs | [#10](https://github.com/ende76/brotli-rs/issues/10) | afl
 brotli-rs | [#11](https://github.com/ende76/brotli-rs/issues/11) | afl
 brotli-rs | [#12](https://github.com/ende76/brotli-rs/issues/12) | afl
@@ -33,6 +34,7 @@ image | [2](https://github.com/PistonDevelopers/image/issues/623) | libfuzzer
 image | [3](https://github.com/PistonDevelopers/image/issues/624) | libfuzzer
 image | [4](https://github.com/PistonDevelopers/image/issues/625) | libfuzzer
 inflate | [arithmetic overflow](https://github.com/PistonDevelopers/inflate/issues/14) | libfuzzer
+ipfix | [index out of bounds](https://github.com/DominoTree/rs-ipfix/issues/1) | libfuzzer
 jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl
 jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl
 jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer
@@ -46,6 +48,7 @@ nom | [arithmetic overflow](https://github.com/Geal/nom/pull/486) | libfuzzer
 npy-rs | [arithmetic overflow](https://github.com/potocpav/npy-rs/pull/2) | libfuzzer
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer
 num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | libfuzzer
+pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/issues/53) | libfuzzer
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/pull/55/commits/53a5c099df585dd65382ffd7f2912728eaa764d5) | libfuzzer
@@ -65,6 +68,7 @@ ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues
 svgparser | [arithmetic overflow, bound checking panic, incorrect result](https://github.com/RazrFalcon/libsvgparser/commit/4742f16e834445a682a0a4db62600d275a457390) | libfuzzer
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl
+todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer
