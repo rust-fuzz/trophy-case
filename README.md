@@ -70,6 +70,12 @@ svgparser | [arithmetic overflow, bound checking panic, incorrect result](https:
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer
+toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer
+toml | [#179](https://github.com/alexcrichton/toml-rs/issues/179) | libfuzzer
+toml | [#180](https://github.com/alexcrichton/toml-rs/issues/180) | libfuzzer
+toml | [#181](https://github.com/alexcrichton/toml-rs/issues/181) | libfuzzer
+toml | [#185](https://github.com/alexcrichton/toml-rs/issues/185) | libfuzzer
+toml | [#186](https://github.com/alexcrichton/toml-rs/issues/186) | libfuzzer
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer
