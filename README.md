@@ -19,6 +19,7 @@ brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer
 cpp_demangle | [#41](https://github.com/fitzgen/cpp_demangle/pull/41) | afl
+cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer
 flac | [#3](https://github.com/sourrust/flac/issues/3) | afl
 flac | [index out of bounds](https://github.com/sourrust/flac/issues/11) | libfuzzer
