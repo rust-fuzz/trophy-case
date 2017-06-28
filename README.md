@@ -94,3 +94,4 @@ vosub | [invalid slice 1](https://github.com/emk/subtitles-rs/commit/20e430105b1
 vosub | [shift overflow](https://github.com/emk/subtitles-rs/commit/5d3364b96389d90deac0f024a57660951b7e1dd6) | libfuzzer
 wasmparser.rs | [arithmetic overflow](https://github.com/yurydelendik/wasmparser.rs/issues/21#issuecomment-310253956) | libfuzzer
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl
+zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer
