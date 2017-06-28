@@ -61,6 +61,7 @@ rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl
 rustc | [#24276](https://github.com/rust-lang/rust/issues/24276) | afl
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl
+semver | [logic error](https://github.com/steveklabnik/semver/issues/116#issuecomment-311215219) | libfuzzer
 serde | [#75](https://github.com/serde-rs/serde/issues/75) | afl
 serde | [#77](https://github.com/serde-rs/serde/issues/77) | afl
 serde | [#82](https://github.com/serde-rs/serde/issues/82) | afl
