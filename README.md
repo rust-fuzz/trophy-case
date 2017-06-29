@@ -61,7 +61,6 @@ rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl
 rustc | [#24276](https://github.com/rust-lang/rust/issues/24276) | afl
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl
-sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer
 semver | [logic error](https://github.com/steveklabnik/semver/issues/116#issuecomment-311215219) | libfuzzer
 serde | [#75](https://github.com/serde-rs/serde/issues/75) | afl
 serde | [#77](https://github.com/serde-rs/serde/issues/77) | afl
@@ -77,6 +76,7 @@ ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues
 ssh-parser | [arithmetic overflow](https://github.com/rusticata/ssh-parser/issues/1) | libfuzzer
 svgparser | [arithmetic overflow, bound checking panic, incorrect result](https://github.com/RazrFalcon/libsvgparser/commit/4742f16e834445a682a0a4db62600d275a457390) | libfuzzer
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer
+sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer
 toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer
