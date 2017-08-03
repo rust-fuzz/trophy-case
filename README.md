@@ -50,7 +50,8 @@ npy-rs | [arithmetic overflow](https://github.com/potocpav/npy-rs/pull/2) | libf
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer |
 num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | libfuzzer |
 pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer |
-pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer |
+pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
+pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-cmark/issues/81) | libfuzzer | `loop`, `utf-8`, `oor`
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/issues/53) | libfuzzer |
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/pull/55/commits/53a5c099df585dd65382ffd7f2912728eaa764d5) | libfuzzer |
 regex | [#84](https://github.com/rust-lang/regex/issues/84) | afl |
@@ -96,3 +97,10 @@ vosub | [shift overflow](https://github.com/emk/subtitles-rs/commit/5d3364b96389
 wasmparser.rs | [arithmetic overflow](https://github.com/yurydelendik/wasmparser.rs/issues/21#issuecomment-310253956) | libfuzzer |
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl |
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer |
+
+## Description of categories:
+
+* `loop`: Infinite loop
+* `oor`: Out of range access
+* `unwrap`: Call to `unwrap` on `None` or `Err(_)`
+* `utf-8`: Problem with UTF-8 strings handling, eg. get a char not at a char boundary
