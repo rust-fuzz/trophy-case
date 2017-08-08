@@ -49,6 +49,7 @@ nom | [arithmetic overflow](https://github.com/Geal/nom/pull/486) | libfuzzer | 
 npy-rs | [arithmetic overflow](https://github.com/potocpav/npy-rs/pull/2) | libfuzzer |
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer |
 num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | libfuzzer | `unwrap`
+parity | [panic on `BasicDecoder` unchecked addition](https://github.com/paritytech/parity/issues/6226) | libfuzzer
 pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer |
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
 pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-cmark/issues/81) | libfuzzer | `loop`, `utf-8`, `oor`
