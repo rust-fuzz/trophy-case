@@ -91,10 +91,10 @@ toml | [#186](https://github.com/alexcrichton/toml-rs/issues/186) | libfuzzer | 
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer |
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer |
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer | `oor`
-vosub | [2](https://github.com/emk/subtitles-rs/commit/46df766dd22cb6a04a534611f08c23903e58746c) | libfuzzer |
-vosub | [3](https://github.com/emk/subtitles-rs/commit/f2f5309aa8173dfec4bb5816950d718a1ac669c2) | libfuzzer |
-vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e1c5e786e88653253243648dd9d49983f2) | libfuzzer |
-vosub | [invalid slice 1](https://github.com/emk/subtitles-rs/commit/20e430105b1fc02aa135788ba150a0dd49a7d1ef) | libfuzzer |
+vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/46df766dd22cb6a04a534611f08c23903e58746c) | libfuzzer | `oor`
+vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/f2f5309aa8173dfec4bb5816950d718a1ac669c2) | libfuzzer | `panic`
+vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e1c5e786e88653253243648dd9d49983f2) | libfuzzer | `arith`
+vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/20e430105b1fc02aa135788ba150a0dd49a7d1ef) | libfuzzer | `oor`
 vosub | [shift overflow](https://github.com/emk/subtitles-rs/commit/5d3364b96389d90deac0f024a57660951b7e1dd6) | libfuzzer | `arith`
 wasmparser.rs | [arithmetic overflow](https://github.com/yurydelendik/wasmparser.rs/issues/21#issuecomment-310253956) | libfuzzer | `arith`
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl | `utf-8`
