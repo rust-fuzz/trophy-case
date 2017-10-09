@@ -64,6 +64,7 @@ rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
 rustc | [#24276](https://github.com/rust-lang/rust/issues/24276) | afl | `segfault`
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl | `arith`
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl | `panic`
+rust-snappy | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
 semver | [logic error](https://github.com/steveklabnik/semver/issues/116#issuecomment-311215219) | libfuzzer | `logic`
 serde | [#75](https://github.com/serde-rs/serde/issues/75) | afl | `arith`
 serde | [#77](https://github.com/serde-rs/serde/issues/77) | afl | `arith`
