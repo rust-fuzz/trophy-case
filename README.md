@@ -99,6 +99,7 @@ vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e
 vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/20e430105b1fc02aa135788ba150a0dd49a7d1ef) | libfuzzer | `oor`
 vosub | [shift overflow](https://github.com/emk/subtitles-rs/commit/5d3364b96389d90deac0f024a57660951b7e1dd6) | libfuzzer | `arith`
 wasmparser.rs | [arithmetic overflow](https://github.com/yurydelendik/wasmparser.rs/issues/21#issuecomment-310253956) | libfuzzer | `arith`
+ws-rs | [arithmetic overflow](https://github.com/housleyjk/ws-rs/pull/179) | libfuzzer | `arith`
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl | `utf-8`
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer | `arith`
 
