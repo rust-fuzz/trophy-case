@@ -45,6 +45,7 @@ mp4parse-rust | [#2](https://github.com/mozilla/mp4parse-rust/issues/2) | afl |
 mp4parse-rust | [#4](https://github.com/mozilla/mp4parse-rust/issues/4) | afl |
 mp4parse-rust | [#5](https://github.com/mozilla/mp4parse-rust/issues/5) | afl |
 mp4parse-rust | [#6](https://github.com/mozilla/mp4parse-rust/issues/6) | afl |
+msgpack-rust | [#151](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
 nom | [arithmetic overflow](https://github.com/Geal/nom/pull/486) | libfuzzer | `arith`
 npy-rs | [arithmetic overflow](https://github.com/potocpav/npy-rs/pull/2) | libfuzzer |
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer |
