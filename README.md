@@ -40,6 +40,7 @@ jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl |
 jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl |
 jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer |
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer |
+minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer |
 Molten | [#41](https://github.com/LeopoldArkham/Molten/issues/41) | libfuzzer | `utf-8`
 Molten | [#42](https://github.com/LeopoldArkham/Molten/issues/42) | libfuzzer | `oor`
 mp3-metadata | [#9](https://github.com/GuillaumeGomez/mp3-metadata/pull/9) | afl |
