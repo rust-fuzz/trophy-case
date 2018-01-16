@@ -55,6 +55,7 @@ ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/nt
 num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | libfuzzer | `unwrap`
 parity | [panic on `BasicDecoder` unchecked addition](https://github.com/paritytech/parity/issues/6226) | libfuzzer
 pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer |
+proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
 pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-cmark/issues/81) | libfuzzer | `loop`, `utf-8`, `oor`
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/issues/53) | libfuzzer | `arith`
