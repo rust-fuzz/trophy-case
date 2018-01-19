@@ -39,6 +39,7 @@ ipfix | [index out of bounds](https://github.com/DominoTree/rs-ipfix/issues/1) |
 jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl |
 jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl |
 jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer |
+json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer |
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer |
 Molten | [#41](https://github.com/LeopoldArkham/Molten/issues/41) | libfuzzer | `utf-8`
