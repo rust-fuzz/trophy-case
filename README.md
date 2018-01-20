@@ -77,6 +77,7 @@ semver | [logic error](https://github.com/steveklabnik/semver/issues/116#issueco
 serde | [#75](https://github.com/serde-rs/serde/issues/75) | afl | `arith`
 serde | [#77](https://github.com/serde-rs/serde/issues/77) | afl | `arith`
 serde | [#82](https://github.com/serde-rs/serde/issues/82) | afl | `so`
+serde-yaml | [$88](https://github.com/dtolnay/serde-yaml/pull/88) | libfuzzer | `logic`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/2582d1573de37f23d77ed2b1e491d095c920ccfc) | libfuzzer | `oor`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/3f43be8d8450db19fd427f48e8c658561591da1f) | libfuzzer | `oor`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/ed2c376628b6566b0e48af2ca5a942d9fa288b9a) | libfuzzer | `oor`
