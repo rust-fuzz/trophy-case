@@ -86,6 +86,7 @@ smoltcp | [arithmetic underflow](https://github.com/m-labs/smoltcp/commit/b33d86
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/2989fa334885916e9c8c76216a60b28c371a54cb) | libfuzzer | `oor`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/31073835998016eb70982c69d0f2e5390dbc19b3) | libfuzzer | `oor`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/c8ae7bdc219b82c62ee3410893fcc6d7455d64b0) | libfuzzer |  `oor`
+smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/181083f18c977b8a0463a67e360e4db20594fa21) | libfuzzer |  `oor`
 snmp-parser | [panic on unwrapping](https://github.com/rusticata/snmp-parser/issues/2) | libfuzzer | `unwrap`
 ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues/1) | libfuzzer | `oor`
 ssh-parser | [arithmetic overflow](https://github.com/rusticata/ssh-parser/issues/1) | libfuzzer | `arith`
