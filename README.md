@@ -66,6 +66,9 @@ quick-xml | [index out of bounds](https://github.com/tafia/quick-xml/issues/94) 
 regex | [#84](https://github.com/rust-lang/regex/issues/84) | afl | `unwrap`
 regex | [regex parsing panics](https://github.com/rust-lang/regex/pull/349) with [blog post](https://www.nibor.org/blog/fuzzing-is-magic---or-how-i-found-a-panic-in-rusts-regex-library/) | libfuzzer | `unwrap`
 regex | [#417](https://github.com/rust-lang/regex/issues/417) | afl | `utf-8`
+regex | [index out of bounds](https://github.com/rust-lang/regex/issues/464) | honggfuzz | `oor`
+regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `logic`
+regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `unwrap`
 rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl |
 rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
