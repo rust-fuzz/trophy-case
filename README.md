@@ -70,6 +70,7 @@ rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl |
 rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
 rustc | [#24276](https://github.com/rust-lang/rust/issues/24276) | afl | `segfault`
+rustc-demangle | [multiply with overflow](https://github.com/alexcrichton/rustc-demangle/issues/9) | libfuzzer | `arith`
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl | `arith`
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl | `panic`
 rust-snappy | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
