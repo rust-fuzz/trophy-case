@@ -23,6 +23,9 @@ cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-c
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
 flac | [#3](https://github.com/sourrust/flac/issues/3) | afl | `oom`
 flac | [index out of bounds](https://github.com/sourrust/flac/issues/11) | libfuzzer | `oor`
+h2 | [#260](https://github.com/carllerche/h2/pull/260) | honggfuzz | `oor`
+h2 | [#261](https://github.com/carllerche/h2/pull/261) | honggfuzz | `panic`
+h2 | [#262](https://github.com/carllerche/h2/pull/262) | honggfuzz | `panic`
 httparse | [#9](https://github.com/seanmonstar/httparse/issues/9) | afl |
 httpdate | [panics](https://pyfisch.org/blog/fuzzing-all-crates/): "no character boundary" and arithmetic overflow | libfuzzer |
 hyper | [arithmetic overflow](https://github.com/hyperium/hyper/pull/1076) | libfuzzer |
