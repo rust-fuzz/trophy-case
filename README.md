@@ -2,22 +2,24 @@
 
 These bugs aren't nearly as serious as the [memory-safety issues afl has discovered](http://lcamtuf.coredump.cx/afl/#bugs) in C and C++ projects. That's because Rust is memory-safe by default, but also because not many people have tried fuzzing yet! Over time we will update this section with the most interesting bugs, whether they're logic errors or memory-safety problems arising from `unsafe` code. Pull requests are welcome!
 
-Crate | Information | Fuzzer | Category
------ | ----------- | ------ | --------
+Security issues are marked with a ❗️ in the "Security?" column. Denial of service, including panics and out-of-memory, are not considered security issues.
+
+Crate | Information | Fuzzer | Category | Security?
+----- | ----------- | ------ | ---------|----------
 bmfont | [panic on unwrapping](https://github.com/netgusto/rust-bmfont/issues/2) | libfuzzer | `panic`
 brotli-rs | [#10](https://github.com/ende76/brotli-rs/issues/10) | afl | `panic`
 brotli-rs | [#11](https://github.com/ende76/brotli-rs/issues/11) | afl | `panic`
 brotli-rs | [#12](https://github.com/ende76/brotli-rs/issues/12) | afl | `panic`
 brotli-rs | [#2](https://github.com/ende76/brotli-rs/issues/2) | afl | `panic`
-brotli-rs | [#3](https://github.com/ende76/brotli-rs/issues/3) | afl | `panic`
-brotli-rs | [#4](https://github.com/ende76/brotli-rs/issues/4) | afl | `panic`
-brotli-rs | [#5](https://github.com/ende76/brotli-rs/issues/5) | afl | `oor`
-brotli-rs | [#6](https://github.com/ende76/brotli-rs/issues/6) | afl | `arith`
-brotli-rs | [#7](https://github.com/ende76/brotli-rs/issues/7) | afl | `oor`
-brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl | `arith`
-brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl | `arith`
+brotli-rs | [#3](https://github.com/ende76/brotli-rs/issues/3) | afl |
+brotli-rs | [#4](https://github.com/ende76/brotli-rs/issues/4) | afl |
+brotli-rs | [#5](https://github.com/ende76/brotli-rs/issues/5) | afl |
+brotli-rs | [#6](https://github.com/ende76/brotli-rs/issues/6) | afl |
+brotli-rs | [#7](https://github.com/ende76/brotli-rs/issues/7) | afl |
+brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl |
+brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl |
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer | `arith`, `other`, `unwrap`
-capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer |
+capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
 cpp_demangle | [#41](https://github.com/fitzgen/cpp_demangle/pull/41) | afl |
 cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer | `logic`
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
@@ -99,7 +101,7 @@ ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues
 ssh-parser | [arithmetic overflow](https://github.com/rusticata/ssh-parser/issues/1) | libfuzzer | `arith`
 svgparser | [arithmetic overflow, bound checking panic, incorrect result](https://github.com/RazrFalcon/libsvgparser/commit/4742f16e834445a682a0a4db62600d275a457390) | libfuzzer | `arith`, `oor`, `logic`
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
-sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer | `uaf`
+sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer | `uaf` | ❗️
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl | `arith`
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer | `oor`
 toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer | `logic`
