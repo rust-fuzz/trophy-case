@@ -9,13 +9,13 @@ brotli-rs | [#10](https://github.com/ende76/brotli-rs/issues/10) | afl | `panic`
 brotli-rs | [#11](https://github.com/ende76/brotli-rs/issues/11) | afl | `panic`
 brotli-rs | [#12](https://github.com/ende76/brotli-rs/issues/12) | afl | `panic`
 brotli-rs | [#2](https://github.com/ende76/brotli-rs/issues/2) | afl | `panic`
-brotli-rs | [#3](https://github.com/ende76/brotli-rs/issues/3) | afl |
-brotli-rs | [#4](https://github.com/ende76/brotli-rs/issues/4) | afl |
-brotli-rs | [#5](https://github.com/ende76/brotli-rs/issues/5) | afl |
-brotli-rs | [#6](https://github.com/ende76/brotli-rs/issues/6) | afl |
-brotli-rs | [#7](https://github.com/ende76/brotli-rs/issues/7) | afl |
-brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl |
-brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl |
+brotli-rs | [#3](https://github.com/ende76/brotli-rs/issues/3) | afl | `panic`
+brotli-rs | [#4](https://github.com/ende76/brotli-rs/issues/4) | afl | `panic`
+brotli-rs | [#5](https://github.com/ende76/brotli-rs/issues/5) | afl | `oor`
+brotli-rs | [#6](https://github.com/ende76/brotli-rs/issues/6) | afl | `arith`
+brotli-rs | [#7](https://github.com/ende76/brotli-rs/issues/7) | afl | `oor`
+brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl | `arith`
+brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl | `arith`
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer | `arith`, `other`, `unwrap`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer |
 cpp_demangle | [#41](https://github.com/fitzgen/cpp_demangle/pull/41) | afl |
