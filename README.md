@@ -20,6 +20,7 @@ brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl | `arith`
 brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl | `arith`
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer | `arith`, `other`, `unwrap`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
+comrak | [#65](https://github.com/kivikakk/comrak/pull/65) | libfuzzer | `oor`
 cpp_demangle | [#41](https://github.com/fitzgen/cpp_demangle/pull/41) | afl |
 cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer | `logic`
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
