@@ -67,6 +67,9 @@ num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | 
 parity | [panic on `BasicDecoder` unchecked addition](https://github.com/paritytech/parity/issues/6226) | libfuzzer
 pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer |
 png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79) | libfuzzer | `unwrap`
+png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79#issuecomment-400560072) | libfuzzer | `oor`
+png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79#issuecomment-400646862) | afl | `unwrap`, `logic`
+png | [incorrect buffer size due to integer overflow](https://github.com/PistonDevelopers/image-png/issues/80) | afl | `arith`, `oom`
 proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 proc-macro2 | [#55](https://github.com/alexcrichton/proc-macro2/issues/55) | afl | `so`
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
