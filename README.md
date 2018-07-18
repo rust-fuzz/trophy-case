@@ -86,7 +86,12 @@ regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/r
 rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl |
 rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
-rustc | [#24276](https://github.com/rust-lang/rust/issues/24276) | afl | `segfault`
+rustc | [#50577](https://github.com/rust-lang/rust/issues/50577) | `logic`
+rustc | [#50582](https://github.com/rust-lang/rust/issues/50582) | `logic`
+rustc | [#50585](https://github.com/rust-lang/rust/issues/50585) | `logic`
+rustc | [#50600](https://github.com/rust-lang/rust/issues/50600) | `logic`
+rustc | [#50637](https://github.com/rust-lang/rust/issues/50637) | `loop`
+rustc | [#51070](https://github.com/rust-lang/rust/pull/51070) | `logic`
 rustc-demangle | [multiply with overflow](https://github.com/alexcrichton/rustc-demangle/issues/9) | libfuzzer | `arith`
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl | `arith`
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl | `panic`
