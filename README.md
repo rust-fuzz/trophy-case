@@ -138,7 +138,7 @@ ws-rs | [arithmetic overflow](https://github.com/housleyjk/ws-rs/pull/179) | lib
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl | `utf-8`
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer | `arith`
 
-[prog-fuzz](https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655)
+[prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
 
 ## Description of categories:
 
