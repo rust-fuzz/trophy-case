@@ -23,6 +23,7 @@ capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
 comrak | [#65](https://github.com/kivikakk/comrak/pull/65) | libfuzzer | `oor`
 cpp_demangle | [#41](https://github.com/fitzgen/cpp_demangle/pull/41) | afl |
+cranelift | [#418](https://github.com/CraneStation/cranelift/issues/418) | libfuzzer | `logic`
 cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer | `logic`
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
 flac | [#3](https://github.com/sourrust/flac/issues/3) | afl | `oom`
