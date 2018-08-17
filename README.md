@@ -1,5 +1,11 @@
 # 🏆 Trophy Case 🏆
 
+A showcase of bugs found via fuzz testing Rust codebases. It serves multiple purposes:
+
+- Help the community see what issues are common in Rust codebases (useful when e.g. designing APIs)
+- Increase visibility of effective fuzz testing targets so people can reuse testing strategies
+- Provide insight into common issues they can expect to find if they use a certain fuzzer
+
 These bugs aren't nearly as serious as the [memory-safety issues afl has discovered](http://lcamtuf.coredump.cx/afl/#bugs) in C and C++ projects. That's because Rust is memory-safe by default, but also because not many people have tried fuzzing yet! Over time we will update this section with the most interesting bugs, whether they're logic errors or memory-safety problems arising from `unsafe` code. Pull requests are welcome!
 
 Security issues are marked with a ❗️ in the "Security?" column. Denial of service, including panics and out-of-memory, are not considered security issues.
