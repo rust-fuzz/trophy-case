@@ -32,6 +32,7 @@ claxon | [875c3b2](https://github.com/ruuda/claxon/commit/875c3b2e76326a5672af9d
 claxon | [21b1db4](https://github.com/ruuda/claxon/commit/21b1db4a7891afdd453ee60085afc92cf61913ca) | libfuzzer | `oor`
 claxon | [0fd8815](https://github.com/ruuda/claxon/commit/0fd88158a4d29c27f8218a324505583906228289) | libfuzzer | `unwrap`
 claxon | [Massive slowdown on malformed input](https://github.com/ruuda/claxon/commit/0ec74f400cf71b376be59b16d7411d951d5eaecc) | libfuzzer | `other`
+claxon | [Memory disclosure on malformed input](https://github.com/ruuda/claxon/issues/10)  | afl + [libdislocator-numbering](https://github.com/Shnatsel/libdislocator-numbering) | `uninit` | ❗️
 comrak | [#65](https://github.com/kivikakk/comrak/pull/65) | libfuzzer | `oor`
 cpp_demangle | [Multiple panics](https://github.com/fitzgen/cpp_demangle/pull/41) | afl | `unwrap`, `arith`
 cranelift | [#418](https://github.com/CraneStation/cranelift/issues/418) | libfuzzer | `logic`
@@ -165,6 +166,7 @@ zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | lib
 * `segfault`: Program segfaulted
 * `so`: Stack overflow
 * `uaf`: Use after free
+* `uninit`: Program discloses contents of uninitialized memory
 * `unwrap`: Call to `unwrap` on `None` or `Err(_)`
 * `utf-8`: Problem with UTF-8 strings handling, eg. get a char not at a char boundary
 * `panic`: A panic not covered by any of the above
