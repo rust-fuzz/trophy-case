@@ -64,6 +64,10 @@ jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl | 
 jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer | `arith`
 json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/27) | honggfuzz | `oor`
+libflate | [258cf44](https://github.com/sile/libflate/commit/258cf4430eb7e65bf904460b0334edcefb5d41a3) | honggfuzz | `oor`
+libflate | [6157daa](https://github.com/sile/libflate/commit/6157daa468bc2d5c332c055570bfddefce3f5a3b) | honggfuzz | `panic`
+libflate | [dc77163](https://github.com/sile/libflate/commit/dc77163c1cddf15a847f6217b4d838724dee5be0) | honggfuzz | `unwrap`
+libflate | [Out-of-bounds read in unsafe code](https://github.com/sile/libflate/issues/16) | afl | `oor`
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer | `arith`
 lodepng-rust | [memory leak](https://github.com/kornelski/lodepng-rust/issues/28) | libfuzzer | `oom`
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
