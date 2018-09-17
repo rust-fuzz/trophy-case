@@ -104,6 +104,13 @@ regex | [#417](https://github.com/rust-lang/regex/issues/417) | afl | `utf-8`
 regex | [index out of bounds](https://github.com/rust-lang/regex/issues/464) | honggfuzz | `oor`
 regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `logic`
 regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `unwrap`
+roughenough | [reject messages with zero tags](https://github.com/int08h/roughenough/commit/1b21bbc074b8acd146abce50e520eef84bbbec2d) | afl | `logic`, `oor`
+roughenough | [reject short single tag messages](https://github.com/int08h/roughenough/commit/e0d15dc1d9bfbd92518916dbfc306cda32c47ff3) | afl | `logic`, `oor`
+roughenough | [return Error instead of panicking](https://github.com/int08h/roughenough/commit/1ce57a140bcdd1c0c6dfbef1403a1aa11e2240ae) | afl | `panic`
+roughenough | [validate tag offset not past end of message](https://github.com/int08h/roughenough/commit/a029e5073603bf33f64c7550451d32d6ac62963c) | afl | `arith`
+roughenough | [validate value offset not pass end of message](https://github.com/int08h/roughenough/commit/9656fdab0f702ccd784a2e50eabcf94809bc31b5) | afl | `arith`
+roughenough | [handle truncated message](https://github.com/int08h/roughenough/commit/f1f4af2cdfa6f46a58038ca0551c6353d819ac57) | afl | `oor`
+roughenough | [incorrect range check fix](https://github.com/int08h/roughenough/commit/ed267f79b0bc070c5c63e5936db79e9d5aced30c) | libfuzzer | `logic`
 rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
