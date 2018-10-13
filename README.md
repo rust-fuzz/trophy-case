@@ -63,6 +63,7 @@ jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl | 
 jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl | `oom`
 jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer | `arith`
 json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
+just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/27) | honggfuzz | `oor`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/33) | afl | `oor`
 lewton | [memory exhaustion due to integer underflow](https://github.com/RustAudio/lewton/issues/32) | afl | `arith`, `oom`
