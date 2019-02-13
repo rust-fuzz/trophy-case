@@ -57,6 +57,7 @@ image | [#622](https://github.com/PistonDevelopers/image/issues/622) | libfuzzer
 image | [#623](https://github.com/PistonDevelopers/image/issues/623) | libfuzzer | `oom`
 image | [#624](https://github.com/PistonDevelopers/image/issues/624) | libfuzzer | `oom`
 image | [#625](https://github.com/PistonDevelopers/image/issues/625) | libfuzzer | `oor`
+image | [Failed to break on an EOF](https://github.com/PistonDevelopers/image/issues/868) | afl | `oor`
 inflate | [arithmetic overflow](https://github.com/PistonDevelopers/inflate/issues/14) | libfuzzer | `arith`
 ipfix | [index out of bounds](https://github.com/DominoTree/rs-ipfix/issues/1) | libfuzzer | `oor`
 jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl | `unwrap`
