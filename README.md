@@ -81,6 +81,7 @@ lodepng-rust | [memory leak](https://github.com/kornelski/lodepng-rust/issues/28
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
 Molten | [#41](https://github.com/LeopoldArkham/Molten/issues/41) | libfuzzer | `utf-8`
 Molten | [#42](https://github.com/LeopoldArkham/Molten/issues/42) | libfuzzer | `oor`
+mongo_driver | [#55](https://github.com/thijsc/mongo-rust-driver/issues/55) | libfuzzer | `unwrap`
 mp3-metadata | [Multiple panics](https://github.com/GuillaumeGomez/mp3-metadata/pull/9) | afl | `oor`
 mp4parse-rust | [#2](https://github.com/mozilla/mp4parse-rust/issues/2) | afl | `panic`
 mp4parse-rust | [#4](https://github.com/mozilla/mp4parse-rust/issues/4) | afl | `panic`
