@@ -25,6 +25,7 @@ brotli-rs | [#7](https://github.com/ende76/brotli-rs/issues/7) | afl | `oor`
 brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl | `arith`
 brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl | `arith`
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer | `arith`, `other`, `unwrap`
+bson | [#116](https://github.com/zonyitoo/bson-rs/issues/116) | libfuzzer | `oom`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
 claxon | [c036944](https://github.com/ruuda/claxon/commit/c036944b93ed8f96701d39b3a76392d30fc12d19) | libfuzzer | `logic`
