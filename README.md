@@ -156,6 +156,8 @@ svgparser | [arithmetic overflow, bound checking panic, incorrect result](https:
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
 sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer | `uaf` | ❗️
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl | `arith`
+tiff | [index out of bounds](https://github.com/PistonDevelopers/image-tiff/issues/28) | afl | `oor`
+tiff | [memory exhaustion on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/29) | afl | `oom`
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer | `oor`
 toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer | `logic`
 toml | [#179](https://github.com/alexcrichton/toml-rs/issues/179) | libfuzzer | `logic`
