@@ -72,6 +72,8 @@ lexical | [Out-of-bounds read in unsafe code](https://github.com/Alexhuszagh/rus
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/27) | honggfuzz | `oor`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/33) | afl | `oor`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/42) | afl | `oor`
+lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/44) | afl | `oor`
+lewton | [memory exhaustion](https://github.com/RustAudio/lewton/issues/43) | afl | `oom`
 lewton | [memory exhaustion due to integer underflow](https://github.com/RustAudio/lewton/issues/32) | afl | `arith`, `oom`
 lewton | [enormous CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/35) | afl | `other`
 libflate | [258cf44](https://github.com/sile/libflate/commit/258cf4430eb7e65bf904460b0334edcefb5d41a3) | honggfuzz | `oor`
