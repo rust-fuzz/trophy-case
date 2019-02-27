@@ -160,6 +160,7 @@ sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issue
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl | `arith`
 tiff | [index out of bounds](https://github.com/PistonDevelopers/image-tiff/issues/28) | afl | `oor`
 tiff | [memory exhaustion on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/29) | afl | `oom`
+tiff | [infinite loop on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/31) | afl | `loop`
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer | `oor`
 toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer | `logic`
 toml | [#179](https://github.com/alexcrichton/toml-rs/issues/179) | libfuzzer | `logic`
