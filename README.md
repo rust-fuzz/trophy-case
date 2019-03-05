@@ -113,6 +113,7 @@ pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-c
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/issues/53) | libfuzzer | `arith`
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/pull/55/commits/53a5c099df585dd65382ffd7f2912728eaa764d5) | libfuzzer | `arith`
 quick-xml | [index out of bounds](https://github.com/tafia/quick-xml/issues/94) | libfuzzer | `oor`
+rawloader | [abort on huge memory allocation](https://github.com/pedrocr/rawloader/commit/aaf584b4b10d859c9fb60c63d70c3d4437969c39) | afl | `oom`
 regex | [#84](https://github.com/rust-lang/regex/issues/84) | afl | `unwrap`
 regex | [regex parsing panics](https://github.com/rust-lang/regex/pull/349) with [blog post](https://www.nibor.org/blog/fuzzing-is-magic---or-how-i-found-a-panic-in-rusts-regex-library/) | libfuzzer | `unwrap`
 regex | [#417](https://github.com/rust-lang/regex/issues/417) | afl | `utf-8`
