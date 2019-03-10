@@ -80,6 +80,8 @@ lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/44) | 
 lewton | [memory exhaustion](https://github.com/RustAudio/lewton/issues/43) | afl | `oom`
 lewton | [memory exhaustion due to integer underflow](https://github.com/RustAudio/lewton/issues/32) | afl | `arith`, `oom`
 lewton | [enormous CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/35) | afl | `other`
+lewton | [large CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/41) | afl | `other`
+lewton | [infinite loop](https://github.com/RustAudio/lewton/issues/46) | afl | `loop`
 libflate | [258cf44](https://github.com/sile/libflate/commit/258cf4430eb7e65bf904460b0334edcefb5d41a3) | honggfuzz | `oor`
 libflate | [6157daa](https://github.com/sile/libflate/commit/6157daa468bc2d5c332c055570bfddefce3f5a3b) | honggfuzz | `panic`
 libflate | [dc77163](https://github.com/sile/libflate/commit/dc77163c1cddf15a847f6217b4d838724dee5be0) | honggfuzz | `unwrap`
