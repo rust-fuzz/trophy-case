@@ -182,6 +182,7 @@ toml | [#186](https://github.com/alexcrichton/toml-rs/issues/186) | libfuzzer | 
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer | `logic`
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer | `logic`
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer | `oor`
+v_escape | [heap buffer overflow](https://gitlab.com/r-iendo/v_escape/issues/2) | libfuzzer | `oor` | ❗️ 
 vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/46df766dd22cb6a04a534611f08c23903e58746c) | libfuzzer | `oor`
 vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/f2f5309aa8173dfec4bb5816950d718a1ac669c2) | libfuzzer | `panic`
 vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e1c5e786e88653253243648dd9d49983f2) | libfuzzer | `arith`
