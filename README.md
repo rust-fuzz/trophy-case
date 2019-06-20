@@ -89,6 +89,8 @@ libflate | [Out-of-bounds read in unsafe code](https://github.com/sile/libflate/
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer | `arith`
 lodepng-rust | [memory leak](https://github.com/kornelski/lodepng-rust/issues/28) | libfuzzer | `oom`
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
+miniz_oxide | [Infinite loop exhausting memory](https://github.com/Frommi/miniz_oxide/commit/b53177a36853e265943fb01159da0fa99ebd430d) | libfuzzer | `loop`, `oom`
+miniz_oxide | [Infinite loop](https://github.com/Frommi/miniz_oxide/commit/91c23bdbd54f60f91a34a299a08ef55ff68e6f15) | libfuzzer | `loop`
 Molten | [#41](https://github.com/LeopoldArkham/Molten/issues/41) | libfuzzer | `utf-8`
 Molten | [#42](https://github.com/LeopoldArkham/Molten/issues/42) | libfuzzer | `oor`
 mongo_driver | [#55](https://github.com/thijsc/mongo-rust-driver/issues/55) | libfuzzer | `unwrap`
