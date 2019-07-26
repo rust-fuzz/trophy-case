@@ -100,6 +100,7 @@ mp4parse-rust | [#4](https://github.com/mozilla/mp4parse-rust/issues/4) | afl | 
 mp4parse-rust | [#5](https://github.com/mozilla/mp4parse-rust/issues/5) | afl | `panic`
 mp4parse-rust | [#6](https://github.com/mozilla/mp4parse-rust/issues/6) | afl | `panic`
 msgpack-rust | [#151](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
+nifti | [out of bounds array slicing](https://github.com/Enet4/nifti-rs/pull/43) | libfuzzer | `oor`
 nom | [arithmetic overflow](https://github.com/Geal/nom/pull/486) | libfuzzer | `arith`
 npy-rs | [arithmetic overflow due to incorrect parameter declaration](https://github.com/potocpav/npy-rs/pull/2) | libfuzzer | `arith`, `logic`
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer | `unwrap`
