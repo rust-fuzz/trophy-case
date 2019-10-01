@@ -127,6 +127,7 @@ regex | [#417](https://github.com/rust-lang/regex/issues/417) | afl | `utf-8`
 regex | [index out of bounds](https://github.com/rust-lang/regex/issues/464) | honggfuzz | `oor`
 regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `logic`
 regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `unwrap`
+rmpv | [Unchecked vector pre-allocation](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
 roughenough | [reject messages with zero tags](https://github.com/int08h/roughenough/commit/1b21bbc074b8acd146abce50e520eef84bbbec2d) | afl | `logic`, `oor`
 roughenough | [reject short single tag messages](https://github.com/int08h/roughenough/commit/e0d15dc1d9bfbd92518916dbfc306cda32c47ff3) | afl | `logic`, `oor`
 roughenough | [return Error instead of panicking](https://github.com/int08h/roughenough/commit/1ce57a140bcdd1c0c6dfbef1403a1aa11e2240ae) | afl | `panic`
