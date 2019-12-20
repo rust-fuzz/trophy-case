@@ -40,6 +40,7 @@ cranelift | [#418](https://github.com/CraneStation/cranelift/issues/418) | libfu
 cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer | `logic`
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
 dhcp4r | [#6](https://github.com/krolaw/dhcp4r/issues/6) | libfuzzer | `oor`
+encoding_rs | [#44](https://github.com/hsivonen/encoding_rs/issues/44) | afl | `logic`
 flac | [#3](https://github.com/sourrust/flac/issues/3) | afl | `oom`
 flac | [index out of bounds](https://github.com/sourrust/flac/issues/11) | libfuzzer | `oor`
 flif | [#26](https://github.com/dgriffen/flif.rs/pull/26) | libfuzzer | `oom`
