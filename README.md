@@ -199,6 +199,8 @@ wayland-rs | [#187](https://github.com/Smithay/wayland-rs/pull/187) | libfuzzer 
 ws-rs | [arithmetic overflow](https://github.com/housleyjk/ws-rs/pull/179) | libfuzzer | `arith`
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl | `utf-8`
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer | `arith`
+picky | [#10](https://github.com/Devolutions/picky-rs/pull/10) | libfuzzer | `unwrap`
+picky-asn1-der | [#10](https://github.com/Devolutions/picky-rs/pull/10) | libfuzzer | `arith`, `oom`, `oor`
 
 [prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
 
