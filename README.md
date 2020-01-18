@@ -115,6 +115,7 @@ png | [incorrect buffer size due to integer overflow](https://github.com/PistonD
 png | [crash on malformed input](https://github.com/PistonDevelopers/image-png/issues/103) | afl | `oom`
 proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 proc-macro2 | [#55](https://github.com/alexcrichton/proc-macro2/issues/55) | afl | `so`
+prost | [Stack overflow](https://github.com/danburkert/prost/issues/267) | afl | `so` | ❗️
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
 pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-cmark/issues/81) | libfuzzer | `loop`, `utf-8`, `oor`
 pulldown-cmark | [arithmetic overflow](https://github.com/raphlinus/pulldown-cmark/issues/352) | libfuzzer | `arith`
