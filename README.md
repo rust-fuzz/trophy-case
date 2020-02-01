@@ -38,6 +38,8 @@ comrak | [#65](https://github.com/kivikakk/comrak/pull/65) | libfuzzer | `oor`
 cpp_demangle | [Multiple panics](https://github.com/fitzgen/cpp_demangle/pull/41) | afl | `unwrap`, `arith`
 cranelift | [#418](https://github.com/CraneStation/cranelift/issues/418) | libfuzzer | `logic`
 cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer | `logic`
+deflate-rs | [#40](https://github.com/image-rs/deflate-rs/issues/40) | afl | `logic`
+deflate-rs | [#42](https://github.com/image-rs/deflate-rs/issues/42) | afl | `logic`
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
 dhcp4r | [#6](https://github.com/krolaw/dhcp4r/issues/6) | libfuzzer | `oor`
 encoding_rs | [#44](https://github.com/hsivonen/encoding_rs/issues/44) | afl | `logic`
