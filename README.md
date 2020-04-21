@@ -158,6 +158,7 @@ serde | [#77](https://github.com/serde-rs/serde/issues/77) | afl | `arith`
 serde | [#82](https://github.com/serde-rs/serde/issues/82) | afl | `so`
 serde-yaml | [#49](https://github.com/dtolnay/serde-yaml/issues/49) | libfuzzer | `so`
 serde-yaml | [#88](https://github.com/dtolnay/serde-yaml/pull/88) | libfuzzer | `logic`
+ssh-keys | [#3](https://github.com/tailhook/ssh-keys/issues/3) | afl | `oor`
 simple_asn1 | [#9](https://github.com/acw/simple_asn1/pull/9) | libfuzzer | `arith`, `oor`
 sleep-parser | [#3](https://github.com/datrs/sleep-parser/issues/3) | honggfuzz | `oor`, `utf-8`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/2582d1573de37f23d77ed2b1e491d095c920ccfc) | libfuzzer | `oor`
