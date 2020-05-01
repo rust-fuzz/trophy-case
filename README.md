@@ -68,11 +68,11 @@ image | [#877](https://github.com/PistonDevelopers/image/issues/877) | afl | `ar
 image | [#878](https://github.com/PistonDevelopers/image/issues/878) | afl | `oor`
 inflate | [arithmetic overflow](https://github.com/PistonDevelopers/inflate/issues/14) | libfuzzer | `arith`
 ipfix | [index out of bounds](https://github.com/DominoTree/rs-ipfix/issues/1) | libfuzzer | `oor`
-juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/commit/358ca27d28fd6e5497effcf097e2729193ad0d50) | libfuzzer | `utf-8`
 jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl | `unwrap`
 jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl | `oom`
 jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer | `arith`
 json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
+juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/commit/358ca27d28fd6e5497effcf097e2729193ad0d50) | libfuzzer | `utf-8`
 just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
 lexical | [arithmetic overflow](https://github.com/Alexhuszagh/rust-lexical/commit/cc8778384e6d77031b45aef2cb9cb831670573d6) | libfuzzer | `arith`
 lexical | [arithmetic overflow](https://github.com/Alexhuszagh/rust-lexical/commit/466a63395e8d890cfa1fb650abb6e78fafe11771) | libfuzzer | `arith`
