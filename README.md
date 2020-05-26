@@ -92,6 +92,10 @@ libflate | [dc77163](https://github.com/sile/libflate/commit/dc77163c1cddf15a847
 libflate | [Out-of-bounds read in unsafe code](https://github.com/sile/libflate/issues/16) | afl | `oor`
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer | `arith`
 lodepng-rust | [memory leak](https://github.com/kornelski/lodepng-rust/issues/28) | libfuzzer | `oom`
+lzma-rs | [behavior mismatch with reference implementation](https://github.com/gendx/lzma-rs/issues/35) | libfuzzer | `logic`
+lz-fear | [memory exhaustion](https://github.com/main--/rust-lz-fear/issues/6) | libfuzzer | `oom`
+lz-fear | [index out of bounds](https://github.com/main--/rust-lz-fear/issues/7) | libfuzzer | `oor`
+lz-fear | [index out of bounds](https://github.com/main--/rust-lz-fear/issues/8) | libfuzzer | `oor`
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
 miniz_oxide | [Infinite loop exhausting memory](https://github.com/Frommi/miniz_oxide/commit/b53177a36853e265943fb01159da0fa99ebd430d) | libfuzzer | `loop`, `oom`
 miniz_oxide | [Infinite loop](https://github.com/Frommi/miniz_oxide/commit/91c23bdbd54f60f91a34a299a08ef55ff68e6f15) | libfuzzer | `loop`
