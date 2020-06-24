@@ -66,7 +66,7 @@ image | [Failed to break on an EOF](https://github.com/PistonDevelopers/image/is
 image | [#876](https://github.com/PistonDevelopers/image/issues/876) | afl | `oor`
 image | [#877](https://github.com/PistonDevelopers/image/issues/877) | afl | `arith`
 image | [#878](https://github.com/PistonDevelopers/image/issues/878) | afl | `oor`
-image-png | [infinite loop](https://github.com/image-rs/image-png/issues/217) | cargo-fuzz | `loop`
+image | [#1238](https://github.com/image-rs/image/issues/1238) | afl | `oor`
 inflate | [arithmetic overflow](https://github.com/PistonDevelopers/inflate/issues/14) | libfuzzer | `arith`
 ipfix | [index out of bounds](https://github.com/DominoTree/rs-ipfix/issues/1) | libfuzzer | `oor`
 jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl | `unwrap`
@@ -121,6 +121,8 @@ png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/i
 png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79#issuecomment-400646862) | afl | `unwrap`, `logic`
 png | [incorrect buffer size due to integer overflow](https://github.com/PistonDevelopers/image-png/issues/80) | afl | `arith`, `oom`
 png | [crash on malformed input](https://github.com/PistonDevelopers/image-png/issues/103) | afl | `oom`
+png | [infinite loop on crafted input](https://github.com/PistonDevelopers/image-png/issues/217) | libfuzzer | `loop`
+png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/222) | libfuzzer | `oor`
 proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 proc-macro2 | [#55](https://github.com/alexcrichton/proc-macro2/issues/55) | afl | `so`
 prost | [Stack overflow](https://github.com/danburkert/prost/issues/267) | afl | `so` | ❗️
