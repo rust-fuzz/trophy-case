@@ -91,6 +91,7 @@ libflate | [258cf44](https://github.com/sile/libflate/commit/258cf4430eb7e65bf90
 libflate | [6157daa](https://github.com/sile/libflate/commit/6157daa468bc2d5c332c055570bfddefce3f5a3b) | honggfuzz | `panic`
 libflate | [dc77163](https://github.com/sile/libflate/commit/dc77163c1cddf15a847f6217b4d838724dee5be0) | honggfuzz | `unwrap`
 libflate | [Out-of-bounds read in unsafe code](https://github.com/sile/libflate/issues/16) | afl | `oor`
+libstd | [overflow in range bounds calculation on Vec::drain](https://github.com/rust-lang/rust/issues/74909) | [rutenspitz] | `arith`
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer | `arith`
 lodepng-rust | [memory leak](https://github.com/kornelski/lodepng-rust/issues/28) | libfuzzer | `oom`
 lzma-rs | [behavior mismatch with reference implementation](https://github.com/gendx/lzma-rs/issues/35) | libfuzzer | `logic`
@@ -190,6 +191,9 @@ tiff | [index out of bounds](https://github.com/PistonDevelopers/image-tiff/issu
 tiff | [memory exhaustion on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/29) | afl | `oom`
 tiff | [infinite loop on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/31) | afl | `loop`
 tiff | [panic on attempt to divide by zero](https://github.com/PistonDevelopers/image-tiff/issues/33) | afl | `arith`
+tinyvec | [arithmetic underflow](https://github.com/Lokathor/tinyvec/pull/14) | [rutenspitz] | `arith`
+tinyvec | [swap_remove() for last element worked incorrectly](https://github.com/Lokathor/tinyvec/pull/15) | [rutenspitz] | `logic`
+tinyvec | [resize() could set incorrect size for inline storage](https://github.com/Lokathor/tinyvec/pull/16) | [rutenspitz] | `logic`
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer | `oor`
 toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer | `logic`
 toml | [#179](https://github.com/alexcrichton/toml-rs/issues/179) | libfuzzer | `logic`
@@ -217,8 +221,8 @@ Sequoia-PGP | [#514](https://gitlab.com/sequoia-pgp/sequoia/-/issues/514) | libf
 Sequoia-PGP | [#515](https://gitlab.com/sequoia-pgp/sequoia/-/issues/515) | libfuzzer | `utf-8`
 Sequoia-PGP | [#516](https://gitlab.com/sequoia-pgp/sequoia/-/issues/516) | libfuzzer | `oor`
 
-
 [prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
+[rutenspitz]: https://github.com/jakubadamw/rutenspitz
 
 ## Description of categories:
 
