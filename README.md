@@ -220,6 +220,11 @@ picky-asn1-der | [#10](https://github.com/Devolutions/picky-rs/pull/10) | libfuz
 Sequoia-PGP | [#514](https://gitlab.com/sequoia-pgp/sequoia/-/issues/514) | libfuzzer | `arith`
 Sequoia-PGP | [#515](https://gitlab.com/sequoia-pgp/sequoia/-/issues/515) | libfuzzer | `utf-8`
 Sequoia-PGP | [#516](https://gitlab.com/sequoia-pgp/sequoia/-/issues/516) | libfuzzer | `oor`
+Sequoia-PGP | [#516](https://gitlab.com/sequoia-pgp/sequoia/-/issues/517) | libfuzzer | `oor`
+cursive | [grapheme boundary correctness](https://github.com/gyscos/cursive/issues/489) | libfuzzer | `utf-8`
+ncurses-rs | [string with \0](https://github.com/jeaye/ncurses-rs/issues/196) | libfuzzer | `unwrap`
+pancurses | [string with \0](https://github.com/ihalila/pancurses/issues/77) | libfuzzer | `unwrap`
+fontdue | [arithmetic overflow](https://github.com/mooman219/fontdue/issues/35) | libfuzzer | `arith`
 
 [prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
 [rutenspitz]: https://github.com/jakubadamw/rutenspitz
