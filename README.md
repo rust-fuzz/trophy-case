@@ -140,6 +140,14 @@ quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/issues/53) 
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/pull/55/commits/53a5c099df585dd65382ffd7f2912728eaa764d5) | libfuzzer | `arith`
 quick-xml | [index out of bounds](https://github.com/tafia/quick-xml/issues/94) | libfuzzer | `oor`
 rawloader | [abort on huge memory allocation](https://github.com/pedrocr/rawloader/commit/aaf584b4b10d859c9fb60c63d70c3d4437969c39) | afl | `oom`
+rav1e | [Invalid assertion in rate control](https://github.com/xiph/rav1e/pull/1630) | libfuzzer | `panic`
+rav1e | [LRF crash when encoding tiny frames](https://github.com/xiph/rav1e/pull/1797) | libfuzzer | `panic`
+rav1e | [CDEF UV direction mismatch for 4:2:2](https://github.com/xiph/rav1e/pull/2224) | libfuzzer | `logic`
+rav1e | [Safe wrappers for-sys dav1d](https://github.com/xiph/rav1e/pull/2225) | libfuzzer | `logic`
+rav1e | [Crash with 4 tiles for 1080p 4:2:2](https://github.com/xiph/rav1e/pull/2302) | libfuzzer | `logic`
+rav1e | [Buffer underflow in CDEF pad_into_tmp16](https://github.com/xiph/rav1e/pull/2536) | libfuzzer | `so`
+rav1e | [Tiling mismatch for 4:2:2](https://github.com/xiph/rav1e/pull/2537) | libfuzzer | `logic`
+rav1e | [Encode-decode mismatch ](https://github.com/xiph/rav1e/issues/1636) | libfuzzer | `logic`
 regex | [#417](https://github.com/rust-lang/regex/issues/417) | afl | `utf-8`
 regex | [#84](https://github.com/rust-lang/regex/issues/84) | afl | `unwrap`
 regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `unwrap`
