@@ -112,6 +112,7 @@ mp4parse-rust | [#4](https://github.com/mozilla/mp4parse-rust/issues/4) | afl | 
 mp4parse-rust | [#5](https://github.com/mozilla/mp4parse-rust/issues/5) | afl | `panic`
 mp4parse-rust | [#6](https://github.com/mozilla/mp4parse-rust/issues/6) | afl | `panic`
 msgpack-rust | [#151](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
+naga | [slicing not on a character boundary](https://github.com/gfx-rs/naga/issues/90) | libfuzzer | `utf-8`
 ncurses-rs | [string with \0](https://github.com/jeaye/ncurses-rs/issues/196) | libfuzzer | `unwrap`
 nifti | [out of bounds array slicing](https://github.com/Enet4/nifti-rs/pull/43) | libfuzzer | `oor`
 nom | [arithmetic overflow](https://github.com/Geal/nom/pull/486) | libfuzzer | `arith`
