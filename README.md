@@ -13,6 +13,11 @@ Security issues are marked with a ❗️ in the "Security?" column. Denial of se
 Crate | Information | Fuzzer | Category | Security?
 ----- | ----------- | ------ | ---------|----------
 bmfont | [panic on unwrapping](https://github.com/netgusto/rust-bmfont/issues/2) | libfuzzer | `panic`
+boa | [invalid spans](https://github.com/boa-dev/boa/issues/771) | honggfuzz | `logic`
+boa | [Could not convert to BigInt](https://github.com/boa-dev/boa/issues/772) | honggfuzz | `logic`
+boa | [invalid utf16](https://github.com/boa-dev/boa/issues/778) | honggfuzz | `logic`
+boa | [assignment to number](https://github.com/boa-dev/boa/issues/779) | honggfuzz | `logic`
+boa | [division by zero](https://github.com/boa-dev/boa/issues/780) | honggfuzz | `arith`
 brotli-rs | [#10](https://github.com/ende76/brotli-rs/issues/10) | afl | `panic`
 brotli-rs | [#11](https://github.com/ende76/brotli-rs/issues/11) | afl | `panic`
 brotli-rs | [#12](https://github.com/ende76/brotli-rs/issues/12) | afl | `panic`
@@ -52,6 +57,10 @@ goblin | [memory exhaustion](https://github.com/m4b/goblin/issues/120) | afl | `
 h2 | [#260](https://github.com/carllerche/h2/pull/260) | honggfuzz | `oor`
 h2 | [#261](https://github.com/carllerche/h2/pull/261) | honggfuzz | `panic`
 h2 | [#262](https://github.com/carllerche/h2/pull/262) | honggfuzz | `panic`
+hjson-rust | [invalid utf8](https://github.com/hjson/hjson-rust/issues/19) | libfuzzer | `utf-8`
+hjson-rust | [subtract with overflow](https://github.com/hjson/hjson-rust/issues/20) | libfuzzer | `arith`
+hjson-rust | [removal index (is 0) should be < len](https://github.com/hjson/hjson-rust/issues/21) | libfuzzer | `logic`
+hjson-rust | [panics on ParseIntError](https://github.com/hjson/hjson-rust/issues/22) | libfuzzer | `arith`
 httparse | [#9](https://github.com/seanmonstar/httparse/issues/9) | afl | `arith`
 httpdate | [accepted dates like "May 35"](https://pyfisch.org/blog/fuzzing-all-crates/) | libfuzzer | `logic`, `arith`
 httpdate | [panic on "no character boundary"](https://pyfisch.org/blog/fuzzing-all-crates/) | libfuzzer | `utf-8`
@@ -131,6 +140,7 @@ png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/i
 png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79) | libfuzzer | `unwrap`
 png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79#issuecomment-400560072) | libfuzzer | `oor`
 png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/issues/79#issuecomment-400646862) | afl | `unwrap`, `logic`
+prettytable-rs | [subtract with overflow](https://github.com/phsym/prettytable-rs/issues/130) | libfuzzer | `arith`
 proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 proc-macro2 | [#55](https://github.com/alexcrichton/proc-macro2/issues/55) | afl | `so`
 prost | [Stack overflow](https://github.com/danburkert/prost/issues/267) | afl | `so` | ❗️
@@ -164,6 +174,7 @@ roughenough | [return Error instead of panicking](https://github.com/int08h/roug
 roughenough | [validate tag offset not past end of message](https://github.com/int08h/roughenough/commit/a029e5073603bf33f64c7550451d32d6ac62963c) | afl | `logic`
 roughenough | [validate value offset not pass end of message](https://github.com/int08h/roughenough/commit/9656fdab0f702ccd784a2e50eabcf94809bc31b5) | afl | `logic`
 rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
+rust-ini | [invalid codepoint](https://github.com/zonyitoo/rust-ini/issues/75) | libfuzzer | `utf-8`
 rust-snappy | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
 rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
@@ -204,6 +215,7 @@ svgparser | [arithmetic overflow, bound checking panic, incorrect result](https:
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
 swf-parser | [#23](https://github.com/open-flash/swf-parser/issues/23) | libfuzzer | `logic`
 sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer | `uaf` | ❗️
+syn | [Unrecognized literal](https://github.com/dtolnay/syn/issues/897) | libfuzzer | `logic`
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl | `arith`
 tera | [#396](https://github.com/Keats/tera/issues/396) | libfuzzer | `arith`, `logic`
 tiff | [index out of bounds](https://github.com/PistonDevelopers/image-tiff/issues/28) | afl | `oor`
