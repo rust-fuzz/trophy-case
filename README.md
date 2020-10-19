@@ -109,6 +109,7 @@ lz-fear | [index out of bounds](https://github.com/main--/rust-lz-fear/issues/7)
 lz-fear | [index out of bounds](https://github.com/main--/rust-lz-fear/issues/8) | libfuzzer | `oor`
 lz-fear | [memory exhaustion](https://github.com/main--/rust-lz-fear/issues/6) | libfuzzer | `oom`
 lz4_flex | [memcpy-param-overlap](https://github.com/PSeitz/lz4_flex/commit/286ea4cf103078b5b814ef91b62fb2b4e038bceb#diff-2ccf95c39e3fe83bf326d3a07d4c388adb75795bc263b3622e0f804e033d5a0fR216) | libfuzzer | `other`
+lz4_flex | [heap-buffer-overflow](ce92fbf28c94a0f1f6ebc711c86d854e2c9e5622) | libfuzzer | `oor` | ❗️ 
 lzma-rs | [behavior mismatch with reference implementation](https://github.com/gendx/lzma-rs/issues/35) | libfuzzer | `logic`
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
 miniz_oxide | [Infinite loop exhausting memory](https://github.com/Frommi/miniz_oxide/commit/b53177a36853e265943fb01159da0fa99ebd430d) | libfuzzer | `loop`, `oom`
