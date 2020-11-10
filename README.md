@@ -53,6 +53,7 @@ flac | [#3](https://github.com/sourrust/flac/issues/3) | afl | `oom`
 flac | [index out of bounds](https://github.com/sourrust/flac/issues/11) | libfuzzer | `oor`
 flif | [#26](https://github.com/dgriffen/flif.rs/pull/26) | libfuzzer | `oom`
 fontdue | [arithmetic overflow](https://github.com/mooman219/fontdue/issues/35) | libfuzzer | `arith`
+geo | [#531](https://github.com/georust/geo/issues/531) | libfuzzer | `logic`
 goblin | [memory exhaustion](https://github.com/m4b/goblin/issues/120) | afl | `oom`
 h2 | [#260](https://github.com/carllerche/h2/pull/260) | honggfuzz | `oor`
 h2 | [#261](https://github.com/carllerche/h2/pull/261) | honggfuzz | `panic`
