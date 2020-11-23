@@ -52,6 +52,7 @@ encoding_rs | [#44](https://github.com/hsivonen/encoding_rs/issues/44) | afl | `
 flac | [#3](https://github.com/sourrust/flac/issues/3) | afl | `oom`
 flac | [index out of bounds](https://github.com/sourrust/flac/issues/11) | libfuzzer | `oor`
 flatgeobuf | [#85](https://github.com/bjornharrtell/flatgeobuf/issues/85) | libfuzzer | `oom`
+flatgeobuf | [#86](https://github.com/bjornharrtell/flatgeobuf/issues/86) | libfuzzer | `oor`
 flif | [#26](https://github.com/dgriffen/flif.rs/pull/26) | libfuzzer | `oom`
 fontdue | [arithmetic overflow](https://github.com/mooman219/fontdue/issues/35) | libfuzzer | `arith`
 geo | [#531](https://github.com/georust/geo/issues/531) | libfuzzer | `logic`
