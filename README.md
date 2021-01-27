@@ -84,9 +84,10 @@ image | [#878](https://github.com/PistonDevelopers/image/issues/878) | afl | `oo
 image | [Failed to break on an EOF](https://github.com/PistonDevelopers/image/issues/868) | afl | `oor`
 inflate | [arithmetic overflow](https://github.com/PistonDevelopers/inflate/issues/14) | libfuzzer | `arith`
 ipfix | [index out of bounds](https://github.com/DominoTree/rs-ipfix/issues/1) | libfuzzer | `oor`
-jpeg-decoder | [#38](https://github.com/kaksmet/jpeg-decoder/issues/38) | afl | `unwrap`
-jpeg-decoder | [#50](https://github.com/kaksmet/jpeg-decoder/issues/50) | afl | `oom`
-jpeg-decoder | [arithmetic overflow](https://github.com/kaksmet/jpeg-decoder/issues/69) | libfuzzer | `arith`
+jpeg-decoder | [#38](https://github.com/image-rs/jpeg-decoder/issues/38) | afl | `unwrap`
+jpeg-decoder | [#50](https://github.com/image-rs/jpeg-decoder/issues/50) | afl | `oom`
+jpeg-decoder | [arithmetic overflow](https://github.com/image-rs/jpeg-decoder/issues/69) | libfuzzer | `arith`
+jpeg-decoder | [180](https://github.com/image-rs/jpeg-decoder/issues/180) | libfuzzer | `logic`
 json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
 juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/pull/645) | libfuzzer | `utf-8`
 just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
