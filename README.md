@@ -166,6 +166,8 @@ rav1e | [Crash with 4 tiles for 1080p 4:2:2](https://github.com/xiph/rav1e/pull/
 rav1e | [Buffer underflow in CDEF pad_into_tmp16](https://github.com/xiph/rav1e/pull/2536) | libfuzzer | `so`
 rav1e | [Tiling mismatch for 4:2:2](https://github.com/xiph/rav1e/pull/2537) | libfuzzer | `logic`
 rav1e | [Encode-decode mismatch ](https://github.com/xiph/rav1e/issues/1636) | libfuzzer | `logic`
+rav1e | [Crash on width or height of 1](https://github.com/xiph/rav1e/pull/2644) | libfuzzer | `panic`
+rav1e | [Encoder admits invalid color configuration](https://github.com/xiph/rav1e/issue/2586) | libfuzzer | `logic`
 regex | [#417](https://github.com/rust-lang/regex/issues/417) | afl | `utf-8`
 regex | [#84](https://github.com/rust-lang/regex/issues/84) | afl | `unwrap`
 regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `unwrap`
