@@ -243,6 +243,7 @@ toml | [#185](https://github.com/alexcrichton/toml-rs/issues/185) | libfuzzer | 
 toml | [#186](https://github.com/alexcrichton/toml-rs/issues/186) | libfuzzer | `logic`
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer | `logic`
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer | `logic`
+unified-diff | [lines before 1, with no context](https://github.com/notriddle/rust-unified-diff/commit/e7e8a91d74b6d26d7fbcd50dcbe056e0d8e4c03f#diff-b1a35a68f14e696205874893c07fd24fdb88882b47c23cc0e0c80a30c7d53759R260) | libFuzzer | `logic`
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer | `oor`
 v_escape | [heap buffer overflow](https://gitlab.com/r-iendo/v_escape/issues/2) | libfuzzer | `oor` | ❗️ 
 vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e1c5e786e88653253243648dd9d49983f2) | libfuzzer | `arith`
