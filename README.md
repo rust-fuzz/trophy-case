@@ -33,6 +33,7 @@ bson | [#116](https://github.com/zonyitoo/bson-rs/issues/116) | libfuzzer | `oom
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer | `arith`, `other`, `unwrap`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
+clap | [issue/2264](https://github.com/clap-rs/clap/issues/2264) | afl | `utf-8`
 claxon | [0fd8815](https://github.com/ruuda/claxon/commit/0fd88158a4d29c27f8218a324505583906228289) | libfuzzer | `unwrap`
 claxon | [21b1db4](https://github.com/ruuda/claxon/commit/21b1db4a7891afdd453ee60085afc92cf61913ca) | libfuzzer | `oor`
 claxon | [875c3b2](https://github.com/ruuda/claxon/commit/875c3b2e76326a5672af9d9ac8f7f36def514834) | libfuzzer | `logic`
@@ -89,6 +90,7 @@ jpeg-decoder | [#50](https://github.com/image-rs/jpeg-decoder/issues/50) | afl |
 jpeg-decoder | [arithmetic overflow](https://github.com/image-rs/jpeg-decoder/issues/69) | libfuzzer | `arith`
 jpeg-decoder | [180](https://github.com/image-rs/jpeg-decoder/issues/180) | libfuzzer | `logic`
 json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
+json-rust | [issue/193](https://github.com/maciejhirsz/json-rust/issues/193) | afl | `panic`  
 juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/pull/645) | libfuzzer | `utf-8`
 just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
 lewton | [enormous CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/35) | afl | `other`
@@ -174,6 +176,7 @@ regex | [called Option::unwrap() on a None value](https://github.com/rust-lang/r
 regex | [index out of bounds](https://github.com/rust-lang/regex/issues/464) | honggfuzz | `oor`
 regex | [regex parsing panics](https://github.com/rust-lang/regex/pull/349) with [blog post](https://www.nibor.org/blog/fuzzing-is-magic---or-how-i-found-a-panic-in-rusts-regex-library/) | libfuzzer | `unwrap`
 regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `logic`
+regex | [issue/738](https://github.com/rust-lang/regex/issues/738) | afl | `arith`, `oor`, `utf-8`
 rmpv | [Unchecked vector pre-allocation](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
 roughenough | [handle truncated message](https://github.com/int08h/roughenough/commit/f1f4af2cdfa6f46a58038ca0551c6353d819ac57) | afl | `oor`
 roughenough | [incorrect range check fix](https://github.com/int08h/roughenough/commit/ed267f79b0bc070c5c63e5936db79e9d5aced30c) | libfuzzer | `logic`
@@ -197,6 +200,7 @@ rustc-demangle | [multiply with overflow](https://github.com/alexcrichton/rustc-
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl | `arith`
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl | `panic`
 semver | [logic error](https://github.com/steveklabnik/semver/issues/116#issuecomment-311215219) | libfuzzer | `logic`
+semver | [issue/227](https://github.com/steveklabnik/semver/issues/227) | afl | `unwrap`
 Sequoia-PGP | [#514](https://gitlab.com/sequoia-pgp/sequoia/-/issues/514) | libfuzzer | `arith`
 Sequoia-PGP | [#515](https://gitlab.com/sequoia-pgp/sequoia/-/issues/515) | libfuzzer | `utf-8`
 Sequoia-PGP | [#516](https://gitlab.com/sequoia-pgp/sequoia/-/issues/516) | libfuzzer | `oor`
@@ -231,6 +235,7 @@ tiff | [index out of bounds](https://github.com/PistonDevelopers/image-tiff/issu
 tiff | [infinite loop on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/31) | afl | `loop`
 tiff | [memory exhaustion on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/29) | afl | `oom`
 tiff | [panic on attempt to divide by zero](https://github.com/PistonDevelopers/image-tiff/issues/33) | afl | `arith`
+time | [issue/309](https://github.com/time-rs/time/issues/309) | afl | `panic`, `arith`
 tinyvec | [arithmetic underflow](https://github.com/Lokathor/tinyvec/pull/14) | [rutenspitz] | `arith`
 tinyvec | [resize() could set incorrect size for inline storage](https://github.com/Lokathor/tinyvec/pull/16) | [rutenspitz] | `logic`
 tinyvec | [swap_remove() for last element worked incorrectly](https://github.com/Lokathor/tinyvec/pull/15) | [rutenspitz] | `logic`
@@ -241,9 +246,12 @@ toml | [#180](https://github.com/alexcrichton/toml-rs/issues/180) | libfuzzer | 
 toml | [#181](https://github.com/alexcrichton/toml-rs/issues/181) | libfuzzer | `logic`
 toml | [#185](https://github.com/alexcrichton/toml-rs/issues/185) | libfuzzer | `logic`
 toml | [#186](https://github.com/alexcrichton/toml-rs/issues/186) | libfuzzer | `logic`
+tui | [issue/446](https://github.com/fdehau/tui-rs/issues/446) | afl | `arith` 
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer | `logic`
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer | `logic`
 unified-diff | [lines before 1, with no context](https://github.com/notriddle/rust-unified-diff/commit/e7e8a91d74b6d26d7fbcd50dcbe056e0d8e4c03f#diff-b1a35a68f14e696205874893c07fd24fdb88882b47c23cc0e0c80a30c7d53759R260) | libFuzzer | `logic`
+url | [slicing error](https://github.com/servo/rust-url/issues/654) | afl | `oor`  
+url | [out of index](https://github.com/servo/rust-url/issues/656) | afl | `oor`  
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer | `oor`
 v_escape | [heap buffer overflow](https://gitlab.com/r-iendo/v_escape/issues/2) | libfuzzer | `oor` | ❗️ 
 vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e1c5e786e88653253243648dd9d49983f2) | libfuzzer | `arith`
@@ -254,6 +262,7 @@ vosub | [shift overflow](https://github.com/emk/subtitles-rs/commit/5d3364b96389
 wasmparser.rs | [arithmetic overflow](https://github.com/yurydelendik/wasmparser.rs/issues/21#issuecomment-310253956) | libfuzzer | `arith`
 wayland-rs | [#187](https://github.com/Smithay/wayland-rs/pull/187) | libfuzzer | `oor` | 
 ws-rs | [arithmetic overflow](https://github.com/housleyjk/ws-rs/pull/179) | libfuzzer | `arith`
+xi-editor | [issue/1303](https://github.com/xi-editor/xi-editor/issues/1303) | afl | `arith`  
 xml-rs | [#93](https://github.com/netvl/xml-rs/issues/93) | afl | `utf-8`
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer | `arith`
 
