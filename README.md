@@ -240,6 +240,8 @@ tinyvec | [arithmetic underflow](https://github.com/Lokathor/tinyvec/pull/14) | 
 tinyvec | [resize() could set incorrect size for inline storage](https://github.com/Lokathor/tinyvec/pull/16) | [rutenspitz] | `logic`
 tinyvec | [swap_remove() for last element worked incorrectly](https://github.com/Lokathor/tinyvec/pull/15) | [rutenspitz] | `logic`
 todotxt.rs | [index out of bounds](https://github.com/kstep/todotxt.rs/issues/1) | libfuzzer | `oor`
+tokei | [panic](https://github.com/XAMPPRocky/tokei/issues/727) | libfuzzer | `oor`
+tokei | consistency [#725](https://github.com/XAMPPRocky/tokei/issues/725) | libfuzzer | `logic`
 toml | [#178](https://github.com/alexcrichton/toml-rs/issues/178) | libfuzzer | `logic`
 toml | [#179](https://github.com/alexcrichton/toml-rs/issues/179) | libfuzzer | `logic`
 toml | [#180](https://github.com/alexcrichton/toml-rs/issues/180) | libfuzzer | `logic`
