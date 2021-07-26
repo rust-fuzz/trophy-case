@@ -91,6 +91,7 @@ jpeg-decoder | [arithmetic overflow](https://github.com/image-rs/jpeg-decoder/is
 jpeg-decoder | [180](https://github.com/image-rs/jpeg-decoder/issues/180) | libfuzzer | `logic`
 json-rust | [arithmetic overflow](https://github.com/maciejhirsz/json-rust/issues/139) | afl | `arith`
 json-rust | [issue/193](https://github.com/maciejhirsz/json-rust/issues/193) | afl | `panic`  
+jsonschema | [issue/253](https://github.com/Stranger6667/jsonschema-rs/issues/253) | libfuzzer | `oor`  
 juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/pull/645) | libfuzzer | `utf-8`
 just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
 lewton | [enormous CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/35) | afl | `other`
