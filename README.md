@@ -50,6 +50,8 @@ deflate-rs | [#42](https://github.com/image-rs/deflate-rs/issues/42) | afl | `lo
 der-parser | [arithmetic overflow](https://github.com/rusticata/der-parser/issues/2) | libfuzzer | `arith`
 dhcp4r | [#6](https://github.com/krolaw/dhcp4r/issues/6) | libfuzzer | `oor`
 encoding_rs | [#44](https://github.com/hsivonen/encoding_rs/issues/44) | afl | `logic`
+exmex | [#8](https://github.com/bertiqwerty/exmex/issues/8) | libfuzzer | `arith`, `logic`
+exmex | [#13](https://github.com/bertiqwerty/exmex/issues/13) | libfuzzer | `utf-8`
 flac | [#3](https://github.com/sourrust/flac/issues/3) | afl | `oom`
 flac | [index out of bounds](https://github.com/sourrust/flac/issues/11) | libfuzzer | `oor`
 flatgeobuf | [#85](https://github.com/bjornharrtell/flatgeobuf/issues/85) | libfuzzer | `oom`
