@@ -13,6 +13,7 @@ Security issues are marked with a ❗️ in the "Security?" column. Denial of se
 Crate | Information | Fuzzer | Category | Security?
 ----- | ----------- | ------ | ---------|----------
 async-h1 | [non-ASCII input to method](https://github.com/http-rs/async-h1/issues/187) | libfuzzer | `panic`
+bcrypt | [indexing on non-utf8 boundry](https://github.com/Keats/rust-bcrypt/issues/62) | libfuzzer | `utf-8`
 bmfont | [panic on unwrapping](https://github.com/netgusto/rust-bmfont/issues/2) | libfuzzer | `panic`
 boa | [invalid spans](https://github.com/boa-dev/boa/issues/771) | honggfuzz | `logic`
 boa | [Could not convert to BigInt](https://github.com/boa-dev/boa/issues/772) | honggfuzz | `logic`
@@ -32,6 +33,7 @@ brotli-rs | [#8](https://github.com/ende76/brotli-rs/issues/8) | afl | `arith`
 brotli-rs | [#9](https://github.com/ende76/brotli-rs/issues/9) | afl | `arith`
 bson | [#116](https://github.com/zonyitoo/bson-rs/issues/116) | libfuzzer | `oom`
 bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyitoo/bson-rs/issues/64) | libfuzzer | `arith`, `other`, `unwrap`
+bson | [arithmetic overflow leading to out of memory](https://github.com/mongodb/bson-rust/issues/243) | libfuzzer | `arith`, `oom`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
 clap | [issue/2264](https://github.com/clap-rs/clap/issues/2264) | afl | `utf-8`
@@ -42,6 +44,7 @@ claxon | [c036944](https://github.com/ruuda/claxon/commit/c036944b93ed8f96701d39
 claxon | [Massive slowdown on malformed input](https://github.com/ruuda/claxon/commit/0ec74f400cf71b376be59b16d7411d951d5eaecc) | libfuzzer | `other`
 claxon | [Memory disclosure on malformed input](https://github.com/ruuda/claxon/issues/10)  | afl + [libdiffuzz](https://github.com/Shnatsel/libdiffuzz) | `uninit` | ❗️
 comrak | [#65](https://github.com/kivikakk/comrak/pull/65) | libfuzzer | `oor`
+cookie | [indexing on non-utf8 boundry](https://github.com/SergioBenitez/cookie-rs/issues/178) | libfuzzer | `utf-8`
 cpp_demangle | [Multiple panics](https://github.com/fitzgen/cpp_demangle/pull/41) | afl | `unwrap`, `arith`
 cranelift | [#418](https://github.com/CraneStation/cranelift/issues/418) | libfuzzer | `logic`
 csscolorparser | [indexing on non-utf8 boundry] | libfuzzer | `utf-8`
@@ -67,6 +70,7 @@ h2 | [#260](https://github.com/carllerche/h2/pull/260) | honggfuzz | `oor`
 h2 | [#261](https://github.com/carllerche/h2/pull/261) | honggfuzz | `panic`
 h2 | [#262](https://github.com/carllerche/h2/pull/262) | honggfuzz | `panic`
 handlebars | [index out of bounds](https://github.com/sunng87/handlebars-rust/pull/430) | libfuzzer | `oor`
+handlebars | [unwrap panic](https://github.com/sunng87/handlebars-rust/issues/427) | libfuzzer | `unwrap`
 hjson-rust | [invalid utf8](https://github.com/hjson/hjson-rust/issues/19) | libfuzzer | `utf-8`
 hjson-rust | [subtract with overflow](https://github.com/hjson/hjson-rust/issues/20) | libfuzzer | `arith`
 hjson-rust | [removal index (is 0) should be < len](https://github.com/hjson/hjson-rust/issues/21) | libfuzzer | `logic`
@@ -101,6 +105,7 @@ json-rust | [issue/193](https://github.com/maciejhirsz/json-rust/issues/193) | a
 jsonschema | [issue/253](https://github.com/Stranger6667/jsonschema-rs/issues/253) | libfuzzer | `oor`  
 juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/pull/645) | libfuzzer | `utf-8`
 just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
+kalker | [index out of bounds](https://github.com/PaddiM8/kalker/issues/57) | libfuzzer | `oor`
 lewton | [enormous CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/35) | afl | `other`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/27) | honggfuzz | `oor`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/33) | afl | `oor`
@@ -150,6 +155,7 @@ pancurses | [string with \0](https://github.com/ihalila/pancurses/issues/77) | l
 parity | [panic on `BasicDecoder` unchecked addition](https://github.com/paritytech/parity/issues/6226) | libfuzzer | `arith`
 pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer | `arith`
 pdf | [index out of bounds](https://github.com/pdf-rs/pdf/pull/105) | libfuzzer | `oor`
+pdf | [infinite loop](https://github.com/pdf-rs/pdf/issues/103) | libfuzzer | `loop`
 picky | [#10](https://github.com/Devolutions/picky-rs/pull/10) | libfuzzer | `unwrap`
 picky-asn1-der | [#10](https://github.com/Devolutions/picky-rs/pull/10) | libfuzzer | `arith`, `oom`, `oor`
 plist | [arithmetic overflow](https://github.com/ebarnard/rust-plist/pull/71) | libfuzzer | `arith`
@@ -202,6 +208,7 @@ rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 rust-ini | [invalid codepoint](https://github.com/zonyitoo/rust-ini/issues/75) | libfuzzer | `utf-8`
 rust-snappy | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
 rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
+rust-url | [infinite loop](https://github.com/servo/rust-url/issues/692) | libfuzzer | `loop`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
 rustc | [#50577](https://github.com/rust-lang/rust/issues/50577) | [prog-fuzz] | `logic`
 rustc | [#50582](https://github.com/rust-lang/rust/issues/50582) | [prog-fuzz] | `logic`
@@ -248,6 +255,7 @@ syn | [Unrecognized literal](https://github.com/dtolnay/syn/issues/897) | libfuz
 tar-rs | [#23](https://github.com/alexcrichton/tar-rs/issues/23) | afl | `arith`
 tera | [#396](https://github.com/Keats/tera/issues/396) | libfuzzer | `arith`, `logic`
 tera | [unimplemented panic](https://github.com/Keats/tera/issues/657) | libfuzzer | `panic`
+tf-demo-parser | [arithmetic overflow leading to out of memory](https://github.com/demostf/parser/issues/2) | libfuzzer | `arith`, `oom`
 tiff | [index out of bounds](https://github.com/PistonDevelopers/image-tiff/issues/28) | afl | `oor`
 tiff | [infinite loop on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/31) | afl | `loop`
 tiff | [memory exhaustion on malformed input](https://github.com/PistonDevelopers/image-tiff/issues/29) | afl | `oom`
