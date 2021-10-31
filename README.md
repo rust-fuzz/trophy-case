@@ -47,7 +47,7 @@ comrak | [#65](https://github.com/kivikakk/comrak/pull/65) | libfuzzer | `oor`
 cookie | [indexing on non-utf8 boundry](https://github.com/SergioBenitez/cookie-rs/issues/178) | libfuzzer | `utf-8`
 cpp_demangle | [Multiple panics](https://github.com/fitzgen/cpp_demangle/pull/41) | afl | `unwrap`, `arith`
 cranelift | [#418](https://github.com/CraneStation/cranelift/issues/418) | libfuzzer | `logic`
-csscolorparser | [indexing on non-utf8 boundry] | libfuzzer | `utf-8`
+csscolorparser | [indexing on non-utf8 boundry](https://github.com/mazznoer/csscolorparser-rs/pull/7) | libfuzzer | `utf-8`
 cssparser | [floating-point parsing imprecision](https://github.com/servo/rust-cssparser/issues/167) | libfuzzer | `logic`
 cursive | [grapheme boundary correctness](https://github.com/gyscos/cursive/issues/489) | libfuzzer | `utf-8`
 deflate-rs | [#40](https://github.com/image-rs/deflate-rs/issues/40) | afl | `logic`
