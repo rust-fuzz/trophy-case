@@ -197,6 +197,7 @@ regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465)
 regex | [issue/738](https://github.com/rust-lang/regex/issues/738) | afl | `arith`, `oor`, `utf-8`
 rmpv | [Unchecked vector pre-allocation](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
 ron | [stack overflow (unbounded recursion)](https://github.com/ron-rs/ron/issues/307) | libfuzzer | `so`
+ron | [Maps are wrapped in a sequence](https://github.com/ron-rs/ron/issues/338) | libfuzzer | `logic`
 roughenough | [handle truncated message](https://github.com/int08h/roughenough/commit/f1f4af2cdfa6f46a58038ca0551c6353d819ac57) | afl | `oor`
 roughenough | [incorrect range check fix](https://github.com/int08h/roughenough/commit/ed267f79b0bc070c5c63e5936db79e9d5aced30c) | libfuzzer | `logic`
 roughenough | [reject messages with zero tags](https://github.com/int08h/roughenough/commit/1b21bbc074b8acd146abce50e520eef84bbbec2d) | afl | `logic`, `oor`
@@ -276,6 +277,9 @@ toml | [#185](https://github.com/alexcrichton/toml-rs/issues/185) | libfuzzer | 
 toml | [#186](https://github.com/alexcrichton/toml-rs/issues/186) | libfuzzer | `logic`
 toml | [stack overflow (unbounded recursion)](https://github.com/alexcrichton/toml-rs/issues/428) | libfuzzer | `so`
 toml_edit | [stack overflow (unbounded recursion)](https://github.com/ordian/toml_edit/issues/206) | libfuzzer | `so`
+trust-dns-proto | [Incorrect length check in Encoding](https://github.com/bluejekyll/trust-dns/issues/1570) | libfuzzer | `logic`
+trust-dns-proto | [ZERO resouce records are mis-parsed](https://github.com/bluejekyll/trust-dns/issues/1571) | libfuzzer | `logic`
+trust-dns-proto | [Incorrect handling of escapes](https://github.com/bluejekyll/trust-dns/issues/1575) | libfuzzer | `logic`
 tui | [issue/446](https://github.com/fdehau/tui-rs/issues/446) | afl | `arith` 
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer | `logic`
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer | `logic`
