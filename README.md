@@ -12,6 +12,7 @@ Security issues are marked with a ❗️ in the "Security?" column. Denial of se
 
 Crate | Information | Fuzzer | Category | Security?
 ----- | ----------- | ------ | ---------|----------
+asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 async-h1 | [non-ASCII input to method](https://github.com/http-rs/async-h1/issues/187) | libfuzzer | `panic`
 bcrypt | [indexing on non-utf8 boundry](https://github.com/Keats/rust-bcrypt/issues/62) | libfuzzer | `utf-8`
 bmfont | [panic on unwrapping](https://github.com/netgusto/rust-bmfont/issues/2) | libfuzzer | `panic`
@@ -218,11 +219,7 @@ roughenough | [reject short single tag messages](https://github.com/int08h/rough
 roughenough | [return Error instead of panicking](https://github.com/int08h/roughenough/commit/1ce57a140bcdd1c0c6dfbef1403a1aa11e2240ae) | afl | `panic`
 roughenough | [validate tag offset not past end of message](https://github.com/int08h/roughenough/commit/a029e5073603bf33f64c7550451d32d6ac62963c) | afl | `logic`
 roughenough | [validate value offset not pass end of message](https://github.com/int08h/roughenough/commit/9656fdab0f702ccd784a2e50eabcf94809bc31b5) | afl | `logic`
-rust-asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 rust-ini | [invalid codepoint](https://github.com/zonyitoo/rust-ini/issues/75) | libfuzzer | `utf-8`
-rust-snappy | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
-rust-url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
-rust-url | [infinite loop](https://github.com/servo/rust-url/issues/692) | libfuzzer | `loop`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
 rustc | [#50577](https://github.com/rust-lang/rust/issues/50577) | [prog-fuzz] | `logic`
 rustc | [#50582](https://github.com/rust-lang/rust/issues/50582) | [prog-fuzz] | `logic`
@@ -254,6 +251,7 @@ smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/3107383
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/3f43be8d8450db19fd427f48e8c658561591da1f) | libfuzzer | `oor`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/c8ae7bdc219b82c62ee3410893fcc6d7455d64b0) | libfuzzer |  `oor`
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/ed2c376628b6566b0e48af2ca5a942d9fa288b9a) | libfuzzer | `oor`
+snap | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
 snmp-parser | [panic on unwrapping](https://github.com/rusticata/snmp-parser/issues/2) | libfuzzer | `unwrap`
 sqlformat | [panic on unwrapping error due to failure to parse int](https://github.com/shssoichiro/sqlformat-rs/issues/12) | libfuzzer | `unwrap`
 sqlparser | [stack overflow (unbounded recursion)](https://github.com/sqlparser-rs/sqlparser-rs/issues/305) | libfuzzer | `so`
@@ -301,6 +299,8 @@ ubyte | [multiply with overflow when parsing fractional number](https://github.c
 unicode-segmentation | [grapheme boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/19) | libfuzzer | `logic`
 unicode-segmentation | [word boundary correctness](https://github.com/unicode-rs/unicode-segmentation/issues/20) | libfuzzer | `logic`
 unified-diff | [lines before 1, with no context](https://github.com/notriddle/rust-unified-diff/commit/e7e8a91d74b6d26d7fbcd50dcbe056e0d8e4c03f#diff-b1a35a68f14e696205874893c07fd24fdb88882b47c23cc0e0c80a30c7d53759R260) | libFuzzer | `logic`
+url | [#108](https://github.com/servo/rust-url/pull/108) | afl | `oor`
+url | [infinite loop](https://github.com/servo/rust-url/issues/692) | libfuzzer | `loop`
 url | [slicing error](https://github.com/servo/rust-url/issues/654) | afl | `oor`  
 url | [out of index](https://github.com/servo/rust-url/issues/656) | afl | `oor`  
 url | [failed round trip parse](https://github.com/servo/rust-url/issues/729) | libfuzzer | `logic`
