@@ -15,12 +15,15 @@ Crate | Information | Fuzzer | Category | Security?
 asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 async-h1 | [non-ASCII input to method](https://github.com/http-rs/async-h1/issues/187) | libfuzzer | `panic`
 bcrypt | [indexing on non-utf8 boundry](https://github.com/Keats/rust-bcrypt/issues/62) | libfuzzer | `utf-8`
+bincode | [invalid system time panic](https://github.com/bincode-org/bincode/pull/469) | libfuzzer | `panic`
+bincode | [invalid duration panic](https://github.com/bincode-org/bincode/pull/465) | libfuzzer | `panic`
 bmfont | [panic on unwrapping](https://github.com/netgusto/rust-bmfont/issues/2) | libfuzzer | `panic`
 boa | [invalid spans](https://github.com/boa-dev/boa/issues/771) | honggfuzz | `logic`
 boa | [Could not convert to BigInt](https://github.com/boa-dev/boa/issues/772) | honggfuzz | `logic`
 boa | [invalid utf16](https://github.com/boa-dev/boa/issues/778) | honggfuzz | `logic`
 boa | [assignment to number](https://github.com/boa-dev/boa/issues/779) | honggfuzz | `logic`
 boa | [division by zero](https://github.com/boa-dev/boa/issues/780) | honggfuzz | `arith`
+boa | [assertion failure](https://github.com/boa-dev/boa/issues/1768) | libfuzzer | `panic`
 brotli-rs | [#10](https://github.com/ende76/brotli-rs/issues/10) | afl | `panic`
 brotli-rs | [#11](https://github.com/ende76/brotli-rs/issues/11) | afl | `panic`
 brotli-rs | [#12](https://github.com/ende76/brotli-rs/issues/12) | afl | `panic`
@@ -65,9 +68,11 @@ flatgeobuf | [#85](https://github.com/bjornharrtell/flatgeobuf/issues/85) | libf
 flatgeobuf | [#86](https://github.com/bjornharrtell/flatgeobuf/issues/86) | libfuzzer | `oor`
 flif | [#26](https://github.com/dgriffen/flif.rs/pull/26) | libfuzzer | `oom`
 fontdue | [arithmetic overflow](https://github.com/mooman219/fontdue/issues/35) | libfuzzer | `arith`
+fontdue | [slow parsing](https://github.com/mooman219/fontdue/issues/97) | libfuzzer | `other`
 geo | [#531](https://github.com/georust/geo/issues/531) | libfuzzer | `logic`
 geo | [#536](https://github.com/georust/geo/issues/536) | libfuzzer | `logic`
 goblin | [memory exhaustion](https://github.com/m4b/goblin/issues/120) | afl | `oom`
+goblin | [memory exhaustion](https://github.com/m4b/goblin/pull/298) | libfuzzer | `oom`
 h2 | [#260](https://github.com/carllerche/h2/pull/260) | honggfuzz | `oor`
 h2 | [#261](https://github.com/carllerche/h2/pull/261) | honggfuzz | `panic`
 h2 | [#262](https://github.com/carllerche/h2/pull/262) | honggfuzz | `panic`
@@ -138,6 +143,7 @@ lz4_flex | [heap-buffer-overflow](ce92fbf28c94a0f1f6ebc711c86d854e2c9e5622) | li
 lzma-rs | [behavior mismatch with reference implementation](https://github.com/gendx/lzma-rs/issues/35) | libfuzzer | `logic`
 matchit | [invalid utf-8](https://github.com/ibraheemdev/matchit/issues/3) | libfuzzer | `utf-8`
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
+minidump | [unbounded allocation](https://github.com/luser/rust-minidump/issues/381) | libfuzzer | `oom`
 miniz_oxide | [Infinite loop exhausting memory](https://github.com/Frommi/miniz_oxide/commit/b53177a36853e265943fb01159da0fa99ebd430d) | libfuzzer | `loop`, `oom`
 miniz_oxide | [Infinite loop](https://github.com/Frommi/miniz_oxide/commit/91c23bdbd54f60f91a34a299a08ef55ff68e6f15) | libfuzzer | `loop`
 Molten | [#41](https://github.com/LeopoldArkham/Molten/issues/41) | libfuzzer | `utf-8`
@@ -155,6 +161,8 @@ ncurses-rs | [string with \0](https://github.com/jeaye/ncurses-rs/issues/196) | 
 nifti | [out of bounds array slicing](https://github.com/Enet4/nifti-rs/pull/43) | libfuzzer | `oor`
 nom | [arithmetic overflow](https://github.com/Geal/nom/pull/486) | libfuzzer | `arith`
 npy-rs | [arithmetic overflow due to incorrect parameter declaration](https://github.com/potocpav/npy-rs/pull/2) | libfuzzer | `arith`, `logic`
+ntfs | [multiply with overflow](https://github.com/ColinFinck/ntfs/issues/1) | libfuzzer | `arith`
+ntfs | [index OOB](https://github.com/ColinFinck/ntfs/issues/2) | libfuzzer | `oor`
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer | `unwrap`
 num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | libfuzzer | `unwrap`
 pancurses | [string with \0](https://github.com/ihalila/pancurses/issues/77) | libfuzzer | `unwrap`
@@ -166,6 +174,10 @@ pdf | [stack overflow (unbounded recursion)](https://github.com/pdf-rs/pdf/issue
 pdf | [stack overflow (unbounded recursion)](https://github.com/pdf-rs/pdf/issues/121#issuecomment-1003432668) | libfuzzer | `so`
 pdf | [stack overflow (unbounded recursion)](https://github.com/pdf-rs/pdf/issues/121#issuecomment-1003575433) | libfuzzer | `so`
 pdf | [stack overflow (unbounded recursion)](https://github.com/pdf-rs/pdf/issues/121#issuecomment-1003581020) | libfuzzer | `so`
+pdf | [index out of bounds #122](https://github.com/pdf-rs/pdf/issues/122) | libfuzzer | `oor`
+pdf | [index out of bounds #123](https://github.com/pdf-rs/pdf/issues/123) | libfuzzer | `oor`
+pdf | [index out of bounds #124](https://github.com/pdf-rs/pdf/pull/124) | libfuzzer | `oor`
+pdf | [index out of bounds #126](https://github.com/pdf-rs/pdf/issues/126) | libfuzzer | `oor`
 pgp | [subtract with overflow](https://github.com/rpgp/rpgp/issues/146) | libfuzzer | `arith`
 phonenumber | [internal unwrap](https://github.com/rustonaut/rust-phonenumber/issues/43) | libfuzzer | `unwrap`
 picky | [#10](https://github.com/Devolutions/picky-rs/pull/10) | libfuzzer | `unwrap`
@@ -181,11 +193,13 @@ png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/i
 prettytable-rs | [subtract with overflow](https://github.com/phsym/prettytable-rs/issues/130) | libfuzzer | `arith`
 proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 proc-macro2 | [#55](https://github.com/alexcrichton/proc-macro2/issues/55) | afl | `so`
-prost | [Stack overflow](https://github.com/tokio-rs/prost/issues/267) | afl | `so` | ❗️
+prost | [Stack overflow](https://github.com/tokio-rs/prost/issues/267) | afl | `so`
 pulldown-cmark | [arithmetic overflow](https://github.com/raphlinus/pulldown-cmark/issues/352) | libfuzzer | `arith`
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
 pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-cmark/issues/81) | libfuzzer | `loop`, `utf-8`, `oor`
 pulldown-cmark | [string slice out of bounds](https://github.com/raphlinus/pulldown-cmark/issues/521) | libfuzzer | `oor`
+pulldown-cmark | [beginning more than end slice index](https://github.com/raphlinus/pulldown-cmark/issues/561) | libfuzzer | `oor`
+pulldown-cmark | [option unwrap parsing heading attributes](https://github.com/raphlinus/pulldown-cmark/issues/571) | libfuzzer | `unwrap`
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/issues/53) | libfuzzer | `arith`
 quick-xml | [arithmetic overflow](https://github.com/tafia/quick-xml/pull/55/commits/53a5c099df585dd65382ffd7f2912728eaa764d5) | libfuzzer | `arith`
 quick-xml | [index out of bounds](https://github.com/tafia/quick-xml/issues/94) | libfuzzer | `oor`
@@ -262,6 +276,9 @@ svgparser | [arithmetic overflow, bound checking panic, incorrect result](https:
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
 swf-parser | [#23](https://github.com/open-flash/swf-parser/issues/23) | libfuzzer | `logic`
 sxd-document | [use after free](https://github.com/shepmaster/sxd-document/issues/47) | libfuzzer | `uaf` | ❗️
+symbolic-demangle | [extremely slow demangling, OOM](https://github.com/getsentry/symbolic/issues/477) | libfuzzer | `oom`
+symbolic-minidump | [segfault in exposed C++ library](https://github.com/getsentry/symbolic/issues/478) | libfuzzer | `segfault` | ❗️
+symbolic-unreal | [unbounded allocation](https://github.com/getsentry/symbolic/issues/476) | libfuzzer | `oom`
 symphonia | [panic on unwrapping](https://github.com/pdeljanov/Symphonia/pull/58) | libfuzzer | `unwrap`
 syn | [Unrecognized literal](https://github.com/dtolnay/syn/issues/897) | libfuzzer | `logic`
 syn | [panic when parsing impl](https://github.com/dtolnay/syn/issues/1108) | libfuzzer | `logic`
