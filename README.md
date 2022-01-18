@@ -193,7 +193,7 @@ png | [panic on malformed input](https://github.com/PistonDevelopers/image-png/i
 prettytable-rs | [subtract with overflow](https://github.com/phsym/prettytable-rs/issues/130) | libfuzzer | `arith`
 proc-macro2 | [#54](https://github.com/alexcrichton/proc-macro2/issues/54) | afl | `utf-8`
 proc-macro2 | [#55](https://github.com/alexcrichton/proc-macro2/issues/55) | afl | `so`
-prost | [Stack overflow](https://github.com/tokio-rs/prost/issues/267) | afl | `so` | ❗️
+prost | [Stack overflow](https://github.com/tokio-rs/prost/issues/267) | afl | `so`
 pulldown-cmark | [arithmetic overflow](https://github.com/raphlinus/pulldown-cmark/issues/352) | libfuzzer | `arith`
 pulldown-cmark | [Overflow ParseIntError](https://github.com/google/pulldown-cmark/issues/49) | libfuzzer | `unwrap`
 pulldown-cmark | [Panics and infinite loop](https://github.com/google/pulldown-cmark/issues/81) | libfuzzer | `loop`, `utf-8`, `oor`
