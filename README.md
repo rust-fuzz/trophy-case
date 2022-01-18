@@ -68,7 +68,7 @@ flatgeobuf | [#85](https://github.com/bjornharrtell/flatgeobuf/issues/85) | libf
 flatgeobuf | [#86](https://github.com/bjornharrtell/flatgeobuf/issues/86) | libfuzzer | `oor`
 flif | [#26](https://github.com/dgriffen/flif.rs/pull/26) | libfuzzer | `oom`
 fontdue | [arithmetic overflow](https://github.com/mooman219/fontdue/issues/35) | libfuzzer | `arith`
-fontdue | [slow parsing](https://github.com/mooman219/fontdue/issues/97) | libfuzzer | ????????
+fontdue | [slow parsing](https://github.com/mooman219/fontdue/issues/97) | libfuzzer | `other`
 geo | [#531](https://github.com/georust/geo/issues/531) | libfuzzer | `logic`
 geo | [#536](https://github.com/georust/geo/issues/536) | libfuzzer | `logic`
 goblin | [memory exhaustion](https://github.com/m4b/goblin/issues/120) | afl | `oom`
