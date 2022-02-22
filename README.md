@@ -40,6 +40,7 @@ bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyito
 bson | [arithmetic overflow leading to out of memory](https://github.com/mongodb/bson-rust/issues/243) | libfuzzer | `arith`, `oom`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
+chrono | [overflow in date arithmetic](https://github.com/chronotope/chrono/issues/645) | libfuzzer | `arith`
 clap | [issue/2264](https://github.com/clap-rs/clap/issues/2264) | afl | `utf-8`
 claxon | [0fd8815](https://github.com/ruuda/claxon/commit/0fd88158a4d29c27f8218a324505583906228289) | libfuzzer | `unwrap`
 claxon | [21b1db4](https://github.com/ruuda/claxon/commit/21b1db4a7891afdd453ee60085afc92cf61913ca) | libfuzzer | `oor`
@@ -131,6 +132,7 @@ libflate | [258cf44](https://github.com/sile/libflate/commit/258cf4430eb7e65bf90
 libflate | [6157daa](https://github.com/sile/libflate/commit/6157daa468bc2d5c332c055570bfddefce3f5a3b) | honggfuzz | `panic`
 libflate | [dc77163](https://github.com/sile/libflate/commit/dc77163c1cddf15a847f6217b4d838724dee5be0) | honggfuzz | `unwrap`
 libflate | [Out-of-bounds read in unsafe code](https://github.com/sile/libflate/issues/16) | afl | `oor`
+libflate | [internal assertion failure](https://github.com/sile/libflate/issues/64) | libfuzzer | `panic`
 libpnet | [arithmetic overflow](https://github.com/libpnet/libpnet/pull/250) | libfuzzer | `arith`
 libstd | [overflow in range bounds calculation on Vec::drain](https://github.com/rust-lang/rust/issues/74909) | [rutenspitz] | `arith`
 lodepng-rust | [memory leak](https://github.com/kornelski/lodepng-rust/issues/28) | libfuzzer | `oom`
@@ -144,6 +146,14 @@ lzma-rs | [behavior mismatch with reference implementation](https://github.com/g
 matchit | [invalid utf-8](https://github.com/ibraheemdev/matchit/issues/3) | libfuzzer | `utf-8`
 minidump | [#7](https://github.com/luser/rust-minidump/issues/7) | libfuzzer | `panic`
 minidump | [unbounded allocation](https://github.com/luser/rust-minidump/issues/381) | libfuzzer | `oom`
+minidump | [slicing out of bounds](https://github.com/luser/rust-minidump/pull/406) | libfuzzer | `oor`
+minidump | [creating backwards ranges](https://github.com/luser/rust-minidump/issues/407) | libfuzzer | `panic`
+minidump | [add with overflow #413](https://github.com/luser/rust-minidump/issues/413) | libfuzzer | `arith`
+minidump | [add with overflow #422](https://github.com/luser/rust-minidump/issues/422) | libfuzzer | `arith`
+minidump | [add with overflow #425](https://github.com/luser/rust-minidump/pull/425) | libfuzzer | `arith`
+minidump | [infinitely extending vec OOM](https://github.com/luser/rust-minidump/issues/428) | libfuzzer | `oom`
+minidump | [subtract with overflow #439](https://github.com/luser/rust-minidump/issues/439) | libfuzzer | `arith`
+minidump | [index OOB](https://github.com/luser/rust-minidump/issues/440) | libfuzzer | `oor`
 miniz_oxide | [Infinite loop exhausting memory](https://github.com/Frommi/miniz_oxide/commit/b53177a36853e265943fb01159da0fa99ebd430d) | libfuzzer | `loop`, `oom`
 miniz_oxide | [Infinite loop](https://github.com/Frommi/miniz_oxide/commit/91c23bdbd54f60f91a34a299a08ef55ff68e6f15) | libfuzzer | `loop`
 Molten | [#41](https://github.com/LeopoldArkham/Molten/issues/41) | libfuzzer | `utf-8`
