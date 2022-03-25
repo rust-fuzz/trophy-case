@@ -12,6 +12,7 @@ Security issues are marked with a ❗️ in the "Security?" column. Denial of se
 
 Crate | Information | Fuzzer | Category | Security?
 ----- | ----------- | ------ | ---------|----------
+artichoke | [infinite loop in bison-generated C code](https://github.com/mruby/mruby/issues/5676) | libfuzzer | `loop`
 asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 async-h1 | [non-ASCII input to method](https://github.com/http-rs/async-h1/issues/187) | libfuzzer | `panic`
 bcrypt | [indexing on non-utf8 boundry](https://github.com/Keats/rust-bcrypt/issues/62) | libfuzzer | `utf-8`
