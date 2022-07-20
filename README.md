@@ -89,6 +89,7 @@ hjson-rust | [panics on ParseIntError](https://github.com/hjson/hjson-rust/issue
 httparse | [#9](https://github.com/seanmonstar/httparse/issues/9) | afl | `arith`
 httpdate | [accepted dates like "May 35"](https://pyfisch.org/blog/fuzzing-all-crates/) | libfuzzer | `logic`, `arith`
 httpdate | [panic on "no character boundary"](https://pyfisch.org/blog/fuzzing-all-crates/) | libfuzzer | `utf-8`
+human-name | [several panics](https://github.com/djudd/human-name/blob/540321097277498c3977f25fdd0801aed9e96ce1/src/lib.rs#L660-L687) | libfuzzer | `logic`, `arith`
 hyper | [arithmetic overflow](https://github.com/hyperium/hyper/pull/1076) | libfuzzer | `arith`
 image | [#1238](https://github.com/image-rs/image/issues/1238) | afl | `oor`
 image | [#414](https://github.com/PistonDevelopers/image/issues/414) | afl | `logic`
