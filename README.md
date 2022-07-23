@@ -353,6 +353,7 @@ yaxpeax-x86 | [#13 arithmetic overflow](https://github.com/iximeow/yaxpeax-x86/i
 yaxpeax-x86 | [#15 arithmetic overflow](https://github.com/iximeow/yaxpeax-x86/issues/15) | libfuzzer | `arith`
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer | `arith`
 zip-rs | [arithmetic overflow](https://github.com/zip-rs/zip/issues/234) | libfuzzer | `arith`
+zune-jpeg | [heap buffer overflow](https://github.com/etemesi254/zune-jpeg/issues/10) | libfuzzer | `oor` | ❗️
 
 [prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
 [rutenspitz]: https://github.com/jakubadamw/rutenspitz
