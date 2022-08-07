@@ -254,6 +254,7 @@ rustc | [#50585](https://github.com/rust-lang/rust/issues/50585) | [prog-fuzz] |
 rustc | [#50600](https://github.com/rust-lang/rust/issues/50600) | [prog-fuzz] | `logic`
 rustc | [#50637](https://github.com/rust-lang/rust/issues/50637) | [prog-fuzz] | `loop`
 rustc | [#51070](https://github.com/rust-lang/rust/pull/51070) | [prog-fuzz] | `logic`
+rustc | #62524 #62546 #62554 #62863 #62881 #62894 #62895 #62913 #62973 #63116 #63135 #66473 #68629 #68730 #68890 #69130 #69310 #69378 #69396 #69401 #69600 #69602 #70549 #70552 #70594 #70608 #70677 #70724 #70736 #70763 #70813 #70942 #71297 #71471 #71798 #72410 #84104 #84117 #84148 #84149 #86895 #88770 #92267 | [fuzz-rustc] | `utf-8`, `panic`, `oom`, `loop`, `oor`, `unwrap`
 rustc-demangle | [multiply with overflow](https://github.com/alexcrichton/rustc-demangle/issues/9) | libfuzzer | `arith`
 rustc-serialize | [#109](https://github.com/rust-lang/rustc-serialize/issues/109) | afl | `arith`
 rustc-serialize | [#110](https://github.com/rust-lang/rustc-serialize/issues/110) | afl | `panic`
@@ -355,6 +356,7 @@ zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | lib
 zip-rs | [arithmetic overflow](https://github.com/zip-rs/zip/issues/234) | libfuzzer | `arith`
 zune-jpeg | [heap buffer overflow](https://github.com/etemesi254/zune-jpeg/issues/10) | libfuzzer | `oor` | ❗️
 
+[fuzz-rustc]: https://github.com/dwrensha/fuzz-rustc/#bugs-found
 [prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
 [rutenspitz]: https://github.com/jakubadamw/rutenspitz
 
