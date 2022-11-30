@@ -41,6 +41,7 @@ bson | [multiple bugs, including arithmetic overflow](https://github.com/zonyito
 bson | [arithmetic overflow leading to out of memory](https://github.com/mongodb/bson-rust/issues/243) | libfuzzer | `arith`, `oom`
 capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha.github.io/capnproto-rust/2017/02/27/cargo-fuzz.html) | libfuzzer | | ❗️
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
+capnproto-rust | [Out-of-bounds read](https://dwrensha.github.io/capnproto-rust/2022/11/30/out_of_bounds_memory_access_bug.html) | libfuzzer | `oor` | ❗️
 chrono | [overflow in date arithmetic](https://github.com/chronotope/chrono/issues/645) | libfuzzer | `arith`
 clap | [issue/2264](https://github.com/clap-rs/clap/issues/2264) | afl | `utf-8`
 claxon | [0fd8815](https://github.com/ruuda/claxon/commit/0fd88158a4d29c27f8218a324505583906228289) | libfuzzer | `unwrap`
