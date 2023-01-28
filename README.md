@@ -43,6 +43,7 @@ capnproto-rust | [Multiple bugs, including a memory safety bug](https://dwrensha
 capnproto-rust | [reddit](https://www.reddit.com/r/rust/comments/89y5eo/fuzzing_as_a_service_startup_looking_for_rust/dwueuww/), [`e72746c`](https://github.com/capnproto/capnproto-rust/commit/e72746cdd4c672a4b8881ed2ed0375b69d1afb3a) | libfuzzer | `logic`
 capnproto-rust | [Out-of-bounds read](https://dwrensha.github.io/capnproto-rust/2022/11/30/out_of_bounds_memory_access_bug.html) | libfuzzer | `oor` | ❗️
 chrono | [overflow in date arithmetic](https://github.com/chronotope/chrono/issues/645) | libfuzzer | `arith`
+chrono | [panic in checked_add_days](https://github.com/chronotope/chrono/pull/941) | libfuzzer + [bolero](https://camshaft.github.io/bolero/) | `panic`
 clap | [issue/2264](https://github.com/clap-rs/clap/issues/2264) | afl | `utf-8`
 claxon | [0fd8815](https://github.com/ruuda/claxon/commit/0fd88158a4d29c27f8218a324505583906228289) | libfuzzer | `unwrap`
 claxon | [21b1db4](https://github.com/ruuda/claxon/commit/21b1db4a7891afdd453ee60085afc92cf61913ca) | libfuzzer | `oor`
@@ -237,6 +238,8 @@ regex | [index out of bounds](https://github.com/rust-lang/regex/issues/464) | h
 regex | [regex parsing panics](https://github.com/rust-lang/regex/pull/349) with [blog post](https://www.nibor.org/blog/fuzzing-is-magic---or-how-i-found-a-panic-in-rusts-regex-library/) | libfuzzer | `unwrap`
 regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `logic`
 regex | [issue/738](https://github.com/rust-lang/regex/issues/738) | afl | `arith`, `oor`, `utf-8`
+risuto | [server DoS on user input date out of range](https://github.com/Ekleog/risuto/commit/9c23cc863d7d346e8a5e61e98eb99431cf39896f) | libfuzzer + [bolero](https://camshaft.github.io/bolero/) | `panic`
+risuto | [server DoS on user input date during a timezone change](https://github.com/Ekleog/risuto/commit/1a439709abd02b2e83c65a0b4688b591420c534c) | libfuzzer + [bolero](https://camshaft.github.io/bolero/) | `panic`
 rmpv | [Unchecked vector pre-allocation](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
 ron | [stack overflow (unbounded recursion)](https://github.com/ron-rs/ron/issues/307) | libfuzzer | `so`
 ron | [Maps are wrapped in a sequence](https://github.com/ron-rs/ron/issues/338) | libfuzzer | `logic`
