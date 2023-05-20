@@ -285,11 +285,15 @@ smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/c8ae7bd
 smoltcp | [index out of bounds](https://github.com/m-labs/smoltcp/commit/ed2c376628b6566b0e48af2ca5a942d9fa288b9a) | libfuzzer | `oor`
 snap | [#12](https://github.com/BurntSushi/rust-snappy/issues/12) | libfuzzer | `oor`
 snmp-parser | [panic on unwrapping](https://github.com/rusticata/snmp-parser/issues/2) | libfuzzer | `unwrap`
+soroban-env | [incorrect comparison functions](https://github.com/stellar/rs-soroban-env/pull/762) | libfuzzer | `logic`
+soroban-env | [incorrect comparison functions](https://github.com/stellar/rs-soroban-env/pull/767) | libfuzzer | `logic`
+soroban-env | [incorrect conversion](https://github.com/stellar/rs-soroban-env/pull/765) | libfuzzer | `logic`
 sqlformat | [panic on unwrapping error due to failure to parse int](https://github.com/shssoichiro/sqlformat-rs/issues/12) | libfuzzer | `unwrap`
 sqlparser | [stack overflow (unbounded recursion)](https://github.com/sqlparser-rs/sqlparser-rs/issues/305) | libfuzzer | `so`
 ssh-keys | [#3](https://github.com/tailhook/ssh-keys/issues/3) | afl | `oor`
 ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues/1) | libfuzzer | `oor`
 ssh-parser | [arithmetic overflow](https://github.com/rusticata/ssh-parser/issues/1) | libfuzzer | `arith`
+stellar-xdr | [incorrect comparison functions](https://github.com/stellar/stellar-xdr/pull/78) | libfuzzer | `logic`
 svgparser | [arithmetic overflow, bound checking panic, incorrect result](https://github.com/RazrFalcon/libsvgparser/commit/4742f16e834445a682a0a4db62600d275a457390) | libfuzzer | `arith`, `oor`, `logic`
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
 swf-parser | [#23](https://github.com/open-flash/swf-parser/issues/23) | libfuzzer | `logic`
