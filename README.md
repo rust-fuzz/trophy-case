@@ -12,6 +12,7 @@ Security issues are marked with a ❗️ in the "Security?" column. Denial of se
 
 Crate | Information | Fuzzer | Category | Security?
 ----- | ----------- | ------ | ---------|----------
+alloy-json-abi | [Stack Overflow in JsonAbi::parse](https://github.com/alloy-rs/core/issues/702) | libfuzzer | `so`
 artichoke | [infinite loop in bison-generated C code](https://github.com/mruby/mruby/issues/5676) | libfuzzer | `loop`
 asn1 | [#32](https://github.com/alex/rust-asn1/issues/32) | afl | `oom`
 async-h1 | [non-ASCII input to method](https://github.com/http-rs/async-h1/issues/187) | libfuzzer | `panic`
