@@ -181,6 +181,7 @@ ntfs | [multiply with overflow](https://github.com/ColinFinck/ntfs/issues/1) | l
 ntfs | [index OOB](https://github.com/ColinFinck/ntfs/issues/2) | libfuzzer | `oor`
 ntp | [panic caused by unwrap on invalid input](https://github.com/JeffBelgum/ntp/commit/f23ded23c26a5326dae249905d298e8c5f51d371) | libfuzzer | `unwrap`
 num | [panic on `BigInt` parsing](https://github.com/rust-num/num/issues/268) | libfuzzer | `unwrap`
+pade | [index out of bounds and assertion failure](https://github.com/SorellaLabs/pade/pull/1) | [test-fuzz](https://github.com/trailofbits/test-fuzz/) | `panic`
 pancurses | [string with \0](https://github.com/ihalila/pancurses/issues/77) | libfuzzer | `unwrap`
 parity | [panic on `BasicDecoder` unchecked addition](https://github.com/paritytech/parity/issues/6226) | libfuzzer | `arith`
 pcapng | [arithmetic overflow](https://github.com/richo/pcapng-rs/issues/6) | libfuzzer | `arith`
@@ -241,6 +242,7 @@ regex | [index out of bounds](https://github.com/rust-lang/regex/issues/464) | h
 regex | [regex parsing panics](https://github.com/rust-lang/regex/pull/349) with [blog post](https://www.nibor.org/blog/fuzzing-is-magic---or-how-i-found-a-panic-in-rusts-regex-library/) | libfuzzer | `unwrap`
 regex | [Unexpected match branch](https://github.com/rust-lang/regex/issues/465) | honggfuzz | `logic`
 regex | [issue/738](https://github.com/rust-lang/regex/issues/738) | afl | `arith`, `oor`, `utf-8`
+reth | [Encode-decode mismatch](https://github.com/paradigmxyz/reth/pull/5153) | [test-fuzz](https://github.com/trailofbits/test-fuzz/) | `logic`
 risuto | [server DoS on user input date out of range](https://github.com/Ekleog/risuto/commit/9c23cc863d7d346e8a5e61e98eb99431cf39896f) | libfuzzer + [bolero](https://camshaft.github.io/bolero/) | `panic`
 risuto | [server DoS on user input date during a timezone change](https://github.com/Ekleog/risuto/commit/1a439709abd02b2e83c65a0b4688b591420c534c) | libfuzzer + [bolero](https://camshaft.github.io/bolero/) | `panic`
 rmpv | [Unchecked vector pre-allocation](https://github.com/3Hren/msgpack-rust/issues/151) | afl | `oom`
@@ -253,6 +255,7 @@ roughenough | [reject short single tag messages](https://github.com/int08h/rough
 roughenough | [return Error instead of panicking](https://github.com/int08h/roughenough/commit/1ce57a140bcdd1c0c6dfbef1403a1aa11e2240ae) | afl | `panic`
 roughenough | [validate tag offset not past end of message](https://github.com/int08h/roughenough/commit/a029e5073603bf33f64c7550451d32d6ac62963c) | afl | `logic`
 roughenough | [validate value offset not pass end of message](https://github.com/int08h/roughenough/commit/9656fdab0f702ccd784a2e50eabcf94809bc31b5) | afl | `logic`
+ruint | [Encode-decode mismatch](https://github.com/recmo/uint/pull/335) | [test-fuzz](https://github.com/trailofbits/test-fuzz/) | `logic`
 rust-ini | [invalid codepoint](https://github.com/zonyitoo/rust-ini/issues/75) | libfuzzer | `utf-8`
 rustc | [#24275](https://github.com/rust-lang/rust/issues/24275) | afl | `other`
 rustc | [#50577](https://github.com/rust-lang/rust/issues/50577) | [prog-fuzz] | `logic`
@@ -296,6 +299,7 @@ sqlparser | [stack overflow (unbounded recursion)](https://github.com/sqlparser-
 ssh-keys | [#3](https://github.com/tailhook/ssh-keys/issues/3) | afl | `oor`
 ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues/1) | libfuzzer | `oor`
 ssh-parser | [arithmetic overflow](https://github.com/rusticata/ssh-parser/issues/1) | libfuzzer | `arith`
+sszb | [advance out of bounds, overflow](https://github.com/ghiliweld/sszb/pull/1) | [test-fuzz](https://github.com/trailofbits/test-fuzz/) | `panic`, `arith`
 stellar-xdr | [incorrect comparison functions](https://github.com/stellar/stellar-xdr/pull/78) | libfuzzer | `logic`
 svgparser | [arithmetic overflow, bound checking panic, incorrect result](https://github.com/RazrFalcon/libsvgparser/commit/4742f16e834445a682a0a4db62600d275a457390) | libfuzzer | `arith`, `oor`, `logic`
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
