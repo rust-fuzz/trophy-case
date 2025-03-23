@@ -301,6 +301,8 @@ ssh-keys | [panic on slice indexing](https://github.com/tailhook/ssh-keys/issues
 ssh-parser | [arithmetic overflow](https://github.com/rusticata/ssh-parser/issues/1) | libfuzzer | `arith`
 sszb | [advance out of bounds, overflow](https://github.com/ghiliweld/sszb/pull/1) | [test-fuzz](https://github.com/trailofbits/test-fuzz/) | `panic`, `arith`
 stellar-xdr | [incorrect comparison functions](https://github.com/stellar/stellar-xdr/pull/78) | libfuzzer | `logic`
+strftime-ruby | [panic on large padding with reduced rustc format args width and precision](https://github.com/artichoke/strftime-ruby/pull/172) | libfuzzer | `panic`
+strftime-ruby | [partial write of multibyte UTF-8 character to `core::fmt::Write`](https://github.com/artichoke/strftime-ruby/pull/181) | libfuzzer | `utf-8`
 svgparser | [arithmetic overflow, bound checking panic, incorrect result](https://github.com/RazrFalcon/libsvgparser/commit/4742f16e834445a682a0a4db62600d275a457390) | libfuzzer | `arith`, `oor`, `logic`
 svgparser | [endless loop](https://github.com/RazrFalcon/libsvgparser/commit/c55d9a7d4d1e83f405be2e7bfddea89f579f6fc9) | libfuzzer | `loop`
 swf-parser | [#23](https://github.com/open-flash/swf-parser/issues/23) | libfuzzer | `logic`
