@@ -279,6 +279,7 @@ serde | [#77](https://github.com/serde-rs/serde/issues/77) | afl | `arith`
 serde | [#82](https://github.com/serde-rs/serde/issues/82) | afl | `so`
 serde-yaml | [#49](https://github.com/dtolnay/serde-yaml/issues/49) | libfuzzer | `so`
 serde-yaml | [#88](https://github.com/dtolnay/serde-yaml/pull/88) | libfuzzer | `logic`
+simd-json | [NUL bytes allowed inside JSON](https://github.com/simd-lite/simd-json/issues/357) | libfuzzer | `logic`
 simple_asn1 | [#9](https://github.com/acw/simple_asn1/pull/9) | libfuzzer | `arith`, `oor`
 sleep-parser | [#3](https://github.com/datrs/sleep-parser/issues/3) | honggfuzz | `oor`, `utf-8`
 smoltcp | [arithmetic underflow](https://github.com/m-labs/smoltcp/commit/b33d867385e0f256f558d1268fa2c73470b7f34a) | libfuzzer | `arith`
