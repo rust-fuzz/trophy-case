@@ -355,6 +355,9 @@ url | [out of index](https://github.com/servo/rust-url/issues/656) | afl | `oor`
 url | [failed round trip parse](https://github.com/servo/rust-url/issues/729) | libfuzzer | `logic`
 uuid | [index out of bounds](https://github.com/rust-lang-nursery/uuid/pull/81) | libfuzzer | `oor`
 v_escape | [heap buffer overflow](https://gitlab.com/r-iendo/v_escape/issues/2) | libfuzzer | `oor` | ❗️ 
+vector | [arithmetic overflow #1](https://github.com/vectordotdev/vector/pull/23047) | libfuzzer | `arith`
+vector | [arithmetic overflow #2](https://github.com/vectordotdev/vector/pull/23048) | libfuzzer | `arith`
+vector | [index out of bounds](https://github.com/vectordotdev/vector/pull/23071) | libfuzzer | `oor`
 vial | [arithmetic overflow](https://github.com/sigaloid/vial/issues/5) | libfuzzer | `arith`
 vosub | [arithmetic overflow](https://github.com/emk/subtitles-rs/commit/3afdb7e1c5e786e88653253243648dd9d49983f2) | libfuzzer | `arith`
 vosub | [invalid slice](https://github.com/emk/subtitles-rs/commit/20e430105b1fc02aa135788ba150a0dd49a7d1ef) | libfuzzer | `oor`
