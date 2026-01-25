@@ -376,6 +376,7 @@ yaxpeax-x86 | [#15 arithmetic overflow](https://github.com/iximeow/yaxpeax-x86/i
 zip-rs | [arithmetic overflow](https://github.com/mvdnes/zip-rs/issues/40) | libfuzzer | `arith`
 zip-rs | [arithmetic overflow](https://github.com/zip-rs/zip/issues/234) | libfuzzer | `arith`
 zune-jpeg | [heap buffer overflow](https://github.com/etemesi254/zune-jpeg/issues/10) | libfuzzer | `oor` | ❗️
+html5ever | [logic error](https://github.com/servo/html5ever/pull/724) | libfuzzer | `logic`
 
 [fuzz-rustc]: https://github.com/dwrensha/fuzz-rustc/#bugs-found
 [prog-fuzz]: https://github.com/rust-fuzz/trophy-case/issues/36#issuecomment-388740655
