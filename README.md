@@ -122,6 +122,7 @@ jsonschema | [issue/253](https://github.com/Stranger6667/jsonschema-rs/issues/25
 juniper | [panic on "no character boundary"](https://github.com/graphql-rust/juniper/pull/645) | libfuzzer | `utf-8`
 just | [#363](https://github.com/casey/just/issues/363) | libfuzzer | `logic`
 kalker | [index out of bounds](https://github.com/PaddiM8/kalker/issues/57) | libfuzzer | `oor`
+kibi | [invalid duration panic](https://github.com/ilai-deutel/kibi/issues/339) | libfuzzer | `panic`
 lewton | [enormous CPU and memory consumption on crafted input](https://github.com/RustAudio/lewton/issues/35) | afl | `other`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/27) | honggfuzz | `oor`
 lewton | [index out of bounds](https://github.com/RustAudio/lewton/issues/33) | afl | `oor`
